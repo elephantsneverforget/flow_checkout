@@ -4,6 +4,10 @@
 * all we need to do is parse the data we need for each step
 */
 
+if (typeof window.Flow === 'undefined') {
+    console.error('Flow JS not undefined');
+}
+
 Flow.set('on', 'pageview.checkout_step_1', function (data) {
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
