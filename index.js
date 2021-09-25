@@ -25,14 +25,6 @@ function pushDLBeginCheckout(data) {
 
   var productList = getProductsInCart(data);
   window.dataLayer.push({
-    // 'pageTitle': 'Checkout: Shipping and Billing Address',
-    // 'pageCategory': 'Checkout',
-    // 'visitorLoginState': 'flow',
-    // 'customerEmail': data.order.customer.email,
-    // 'customerOrders': null,
-    // 'customerValue': 0,
-    // 'Country': data.order.destination.country,
-    // 'State': data.order.destination.province,
     'event': 'dl_begin_checkout',
     // TODO: how do we generate this?
     // 'event_id': pass in from previous page? ,
@@ -43,15 +35,7 @@ function pushDLBeginCheckout(data) {
       },
       'currencyCode': data.order.total.base.currency
     },
-    'marketing': {
-      // TODO: Should we modify the script to set cookie duration?
-      // currently set to session expiration.
-      'utm_campaign': urlParams['utm_campaign'],
-      'utm_content': urlParams['utm_content'],
-      'utm_medium': urlParams['utm_medium'],
-      'utm_source': urlParams['utm_source'],
-      'utm_content': urlParams['utm_content'],
-    }
+    'marketing' : getMarketingData(urlParams, data),
   });
 }
 
@@ -67,14 +51,6 @@ function pushDLAddShippingInfo(data) {
   var productList = getProductsInCart(data);
 
   window.dataLayer.push({
-    // 'pageTitle': 'Checkout: Shipping and Billing Address',
-    // 'pageCategory': 'Checkout',
-    // 'visitorLoginState': 'flow',
-    // 'customerEmail': data.order.customer.email,
-    // 'customerOrders': null,
-    // 'customerValue': 0,
-    // 'Country': data.order.destination.country,
-    // 'State': data.order.destination.province,
     'event': 'dl_add_shipping_info',
     // TODO: how do we generate this?
     // 'event_id': pass in from previous page? ,
@@ -85,15 +61,7 @@ function pushDLAddShippingInfo(data) {
       },
       'currencyCode': data.order.total.base.currency
     },
-    'marketing': {
-      // TODO: Should we modify the script to set cookie duration?
-      // currently set to session expiration.
-      'utm_campaign': urlParams['utm_campaign'],
-      'utm_content': urlParams['utm_content'],
-      'utm_medium': urlParams['utm_medium'],
-      'utm_source': urlParams['utm_source'],
-      'utm_content': urlParams['utm_content'],
-    }
+    'marketing' : getMarketingData(urlParams, data),
   });
 }
 
@@ -110,14 +78,6 @@ function pushDLAddPaymentInfo(data) {
   var productList = getProductsInCart(data);
 
   window.dataLayer.push({
-    // 'pageTitle': 'Checkout: Shipping and Billing Address',
-    // 'pageCategory': 'Checkout',
-    // 'visitorLoginState': 'flow',
-    // 'customerEmail': data.order.customer.email,
-    // 'customerOrders': null,
-    // 'customerValue': 0,
-    // 'Country': data.order.destination.country,
-    // 'State': data.order.destination.province,
     'event': 'dl_add_payment_info',
     // TODO: how do we generate this?
     // 'event_id': pass in from previous page? ,
@@ -128,15 +88,7 @@ function pushDLAddPaymentInfo(data) {
       },
       'currencyCode': data.order.total.base.currency
     },
-    'marketing': {
-      // TODO: Should we modify the script to set cookie duration?
-      // currently set to session expiration.
-      'utm_campaign': urlParams['utm_campaign'],
-      'utm_content': urlParams['utm_content'],
-      'utm_medium': urlParams['utm_medium'],
-      'utm_source': urlParams['utm_source'],
-      'utm_content': urlParams['utm_content'],
-    }
+    'marketing' : getMarketingData(urlParams, data),
   });
 }
 
@@ -153,14 +105,6 @@ function pushDLPurchase(data) {
   var productList = getProductsInCart(data);
 
   window.dataLayer.push({
-    // 'pageTitle': 'Checkout: Shipping and Billing Address',
-    // 'pageCategory': 'Checkout',
-    // 'visitorLoginState': 'flow',
-    // 'customerEmail': data.order.customer.email,
-    // 'customerOrders': null,
-    // 'customerValue': 0,
-    // 'Country': data.order.destination.country,
-    // 'State': data.order.destination.province,
     'event': 'dl_purchase',
     // TODO: how do we generate this? Looks like it's just UUID.
     // Can we generate this ourselves?
@@ -183,16 +127,7 @@ function pushDLPurchase(data) {
       },
       'currencyCode': data.order.total.currency // USD data.order.total.base.currency
     },
-    'marketing': {
-      // TODO: Should we modify the script to set cookie duration?
-      // currently set to session expiration. 
-      // Should this be set to landing_site == something if no utms?
-      'utm_campaign': urlParams['utm_campaign'],
-      'utm_content': urlParams['utm_content'],
-      'utm_medium': urlParams['utm_medium'],
-      'utm_source': urlParams['utm_source'],
-      'utm_content': urlParams['utm_content'],
-    }
+    'marketing' : getMarketingData(urlParams, data),
   });
 }
 
@@ -238,4 +173,18 @@ function getCookie(name) {
   const value = `; ${document.cookie}`;
   const parts = value.split(`; ${name}=`);
   if (parts.length === 2) return decodeURIComponent(parts.pop().split(';').shift());
+}
+
+// Returns marketing params
+function getMarketingData(urlParams, data) {
+  return {
+    // TODO: Should we modify the script to set cookie duration?
+    // currently set to session expiration.
+    // What if we have no utms?
+    'utm_campaign': urlParams['utm_campaign'],
+    'utm_content': urlParams['utm_content'],
+    'utm_medium': urlParams['utm_medium'],
+    'utm_source': urlParams['utm_source'],
+    'utm_content': urlParams['utm_content'],
+  }
 }
