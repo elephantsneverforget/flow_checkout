@@ -1,7 +1,7 @@
 # Flow Checkout Script
 
-This script needs the GTM web container ID of the client it's used on.
+Script needs the GTM web container ID of the client it's used for.
 
-From my understanding we are to provide a URL for this script for each client.
+From my understanding, we are to provide flow a URL for this script for each of our clients.
 
-As it stand this is mostly functioning but needs some questions answered, marked as TODO.
+This is mostly functioning but needs some questions answered, marked as TODO.
