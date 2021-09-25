@@ -12,7 +12,7 @@
 
 window.dataLayer = window.dataLayer || [];
 
-// Fires on contact info page load
+// Fires on contact info page load (checkout step 1)
 // Triggers dl_begin_checkout
 flow.checkout.onPageView(flow.checkout.enums.pageView.CONTACT_INFO, function handlePageView(data) {
   pushDLBeginCheckout(data);
@@ -38,13 +38,13 @@ function pushDLBeginCheckout(data) {
     // 'event_id': pass in from previous page? ,
     'ecommerce': {
       'checkout': {
-        'actionField': { step: 1 },
+        'actionField': { step: 1, action: 'checkout'},
         'products': productList
       },
       'currencyCode': data.order.total.base.currency
     },
     'marketing': {
-      // TODO: should we modify the script to set cookie duration
+      // TODO: Should we modify the script to set cookie duration?
       // currently set to session expiration.
       'utm_campaign': urlParams['utm_campaign'],
       'utm_content': urlParams['utm_content'],
@@ -54,6 +54,74 @@ function pushDLBeginCheckout(data) {
     }
   });
 }
+
+
+
+// Fires on shipping method page load (checkout step 2)
+// Triggers dl_add_shipping_info
+flow.checkout.onPageView(flow.checkout.enums.pageView.SHIPPING_METHOD, function handlePageView(data) {
+  pushDLAddShippingInfo(data);
+});
+
+function pushDLAddShippingInfo(data) {
+  var cookie = getCookie('__gtm_campaign_url');
+  var urlParams = getUrlParams(cookie);
+  var productList = getProductsInCart(data);
+
+  window.dataLayer.push({
+    'pageTitle': 'Checkout: Shipping and Billing Address',
+    'pageCategory': 'Checkout',
+    'visitorLoginState': 'flow',
+    'customerEmail': data.order.customer.email,
+    'customerOrders': null,
+    'customerValue': 0,
+    'Country': data.order.destination.country,
+    'State': data.order.destination.province,
+    'event': 'dl_add_shipping_info',
+    // TODO: how do we generate this?
+    // 'event_id': pass in from previous page? ,
+    'ecommerce': {
+      'checkout': {
+        'actionField': { step: 2, action: 'checkout'},
+        'products': productList
+      },
+      'currencyCode': data.order.total.base.currency
+    },
+    'marketing': {
+      // TODO: Should we modify the script to set cookie duration?
+      // currently set to session expiration.
+      'utm_campaign': urlParams['utm_campaign'],
+      'utm_content': urlParams['utm_content'],
+      'utm_medium': urlParams['utm_medium'],
+      'utm_source': urlParams['utm_source'],
+      'utm_content': urlParams['utm_content'],
+    }
+  });
+}
+
+
+
+flow.checkout.onPageView(flow.checkout.enums.pageView.PAYMENT_INFO, function handlePageView(data) {
+  var items = [];
+  var prices = data.getOrderPrices();
+
+  data.order.items.forEach((orderItem) => {
+    var contentItem = data.content.getItem(orderItem.number);
+
+    if (contentItem) {
+      items.push({
+        'brand': '@clientNameReplace',
+        'category': contentItem.categories.join(),
+        'id': contentItem.attributes['product_id'],
+        'name': contentItem.name,
+        'price': contentItem.price.amount,
+        'quantity': orderItem.quantity,
+        'variant': contentItem.attributes['colorName-x-default']
+      });
+    }
+  });
+
+});
 
 // flow.checkout.onPageView(flow.checkout.enums.pageView.CONFIRMATION, function handlePageView(data) {
 flow.checkout.onTransaction(function (data) {
@@ -115,70 +183,6 @@ flow.checkout.onTransaction(function (data) {
 });
 
 
-flow.checkout.onPageView(flow.checkout.enums.pageView.SHIPPING_METHOD, function handlePageView(data) {
-  var items = [];
-
-  data.order.items.forEach((orderItem) => {
-    var contentItem = data.content.getItem(orderItem.number);
-
-    if (contentItem) {
-      items.push({
-        'brand': '@clientNameReplace',
-        'category': contentItem.categories.join(),
-        'dimension6': contentItem.attributes['modelSize-x-default'],
-        'dimension7': `${contentItem.attributes['product_id']}${contentItem.attributes['color']}-${contentItem.attributes['modelSize-x-default']}`,
-        'id': contentItem.attributes['product_id'],
-        'name': contentItem.name,
-        'price': contentItem.price.amount,
-        'quantity': orderItem.quantity,
-        'variant': contentItem.attributes['colorName-x-default']
-      });
-    }
-  });
-
-  dataLayer.push({
-    'pageTitle': 'Checkout: Shipping method',
-    'pageCategory': 'Checkout',
-    'visitorLoginState': 'flow',
-    'customerEmail': data.order.customer.email,
-    'customerOrders': null,
-    'customerValue': 0,
-    'Country': data.order.destination.country,
-    'State': data.order.destination.province,
-    'event': 'checkout',
-    'ecommerce': {
-      'checkout': {
-        'actionField': { step: 3 },
-        'products': items
-      },
-      'currencyCode': data.order.total.base.currency
-    }
-  });
-});
-
-flow.checkout.onPageView(flow.checkout.enums.pageView.PAYMENT_INFO, function handlePageView(data) {
-  var items = [];
-  var prices = data.getOrderPrices();
-
-  data.order.items.forEach((orderItem) => {
-    var contentItem = data.content.getItem(orderItem.number);
-
-    if (contentItem) {
-      items.push({
-        'brand': '@clientNameReplace',
-        'category': contentItem.categories.join(),
-        'id': contentItem.attributes['product_id'],
-        'name': contentItem.name,
-        'price': contentItem.price.amount,
-        'quantity': orderItem.quantity,
-        'variant': contentItem.attributes['colorName-x-default']
-      });
-    }
-  });
-
-});
-
-
 function getProductsInCart(data) {
   var items = [];
 
@@ -206,7 +210,6 @@ function getProductsInCart(data) {
   });
   return items;
 }
-
 
 // Returns an object with key/values matching the url params
 function getUrlParams(address) {
