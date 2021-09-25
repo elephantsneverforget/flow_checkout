@@ -1,140 +1,11 @@
 {
-    "cart": {
-        "id": "F466082",
-        "items": [
-            {
-                "id": "F466082-1",
-                "handle": "womens-techloom-bliss-impulse-red-silver-white",
-                "line_price": 26495,
-                "price": 26495,
-                "product_id": 6562283061321,
-                "product_title": "Women's TechLoom Bliss Impulse Red / Silver / White",
-                "quantity": 1,
-                "title": "Women's TechLoom Bliss Impulse Red / Silver / White",
-                "url": "https://www.athleticpropulsionlabs.com/products/womens-techloom-bliss-impulse-red-silver-white?variant=39286704635977",
-                "variant_id": 39286704635977,
-                "local": {
-                    "line_price": {
-                        "currency": "CAD",
-                        "amount": 264.95,
-                        "label": "CA$264.95",
-                        "base": {
-                            "amount": 199.85,
-                            "currency": "USD",
-                            "label": "US$199.85"
-                        }
-                    },
-                    "price": {
-                        "currency": "CAD",
-                        "amount": 264.95,
-                        "label": "CA$264.95",
-                        "base": {
-                            "amount": 199.85,
-                            "currency": "USD",
-                            "label": "US$199.85"
-                        }
-                    }
-                },
-                "gift_card": false,
-                "requires_shipping": true,
-                "image": "https://cdn.shopify.com/s/files/1/0008/8116/4339/products/techloombliss-impulsered-silver-white-1_400x.jpg?v=1632434627",
-                "product_description": "The ultimate intersection of luxury and performance, the APL TechLoom Bliss running shoe travels with you through all aspects of your life. Over two years in the making and our lightest running shoe ever at 6.8 oz., the Techloom Bliss running shoe features a stunning slip on design and custom elastic strap that allows for quick ingress and egress providing the ultimate comfort and a seamless fit.<br><br data-mce-fragment=\"1\">Perfect for travel, the Bliss uses APL’s proprietary Propelium® technology, designed to maximize energy generation and provide superior comfort while it maintains midsole structural integrity longer than conventional EVA. Our proprietary lightweight Propelium® midsole and traction pattern incorporate a durable rubber outsole with a forefoot crash pad, for the lightest APL running shoe yet. 8mm drop. Wt. 6.8 oz.<br><br data-mce-fragment=\"1\"><strong>All of our shoes are unisex. If your size is sold out, simply select a men's size on the site and adjust the fit down by a size and half. For example, a size 9 in women's is a size 7.5 in men’s.</strong>",
-                "product_type": "FOOTWEAR - WOMEN'S",
-                "properties": {},
-                "sku": "840222816597",
-                "variant_title": "Women's TechLoom Bliss Impulse Red / Silver / White - IMPULSE RED / SILVER / WHITE / 7.5",
-                "vendor": "Athletic Propulsion Labs"
-            },
-            {
-                "id": "F466082-2",
-                "handle": "mens-streamline-pristine-multi-rainbow",
-                "line_price": 39795,
-                "price": 39795,
-                "product_id": 4595672219721,
-                "product_title": "Men's Streamline Pristine / Multi / Rainbow",
-                "quantity": 1,
-                "title": "Men's Streamline Pristine / Multi / Rainbow",
-                "url": "https://www.athleticpropulsionlabs.com/products/mens-streamline-pristine-multi-rainbow?variant=31891893125193",
-                "variant_id": 31891893125193,
-                "local": {
-                    "line_price": {
-                        "currency": "CAD",
-                        "amount": 397.95,
-                        "label": "CA$397.95",
-                        "base": {
-                            "amount": 300.17,
-                            "currency": "USD",
-                            "label": "US$300.17"
-                        }
-                    },
-                    "price": {
-                        "currency": "CAD",
-                        "amount": 397.95,
-                        "label": "CA$397.95",
-                        "base": {
-                            "amount": 300.17,
-                            "currency": "USD",
-                            "label": "US$300.17"
-                        }
-                    }
-                },
-                "gift_card": false,
-                "requires_shipping": true,
-                "image": "https://cdn.shopify.com/s/files/1/0008/8116/4339/products/streamline-pristine-multi-rainbow-1_400x.jpg?v=1625861319",
-                "product_description": "<strong>NEW l</strong> APL is always pushing the limits of what’s possible in performance and our newest introduction the Streamline is our purest, most purpose built running shoe to date. A streamline, by definition, is a design that presents very little resistance to a flow of air, increasing speed and ease of movement. To achieve the superior comfort, cushioning and speed that the APL Streamline delivers, we created a completely new midsole and outsole made from our newest compound; APL FutureFoam.<br><br>The APL FutureFoam running midsole compound was developed to provide exceptional compression, rebound and energy return through strenuous testing over the past 24 months. The midsole surface features horizontal channels carved by the wind to make each stride smoothly flow through the air. Additionally, a slanted, forward leaning shank plate is sandwiched between the two-piece midsole to help promote forward motion upon foot strike, and accelerate the gate cycle. The midsole sits atop a lightweight, two-piece rubber outsole that provides excellent traction along your journey.<br><br>The upper of the APL Streamline continues the lightweight story using our newest upper innovation, APL AeroLux; a combination of materials all working together to provide ultimate performance and comfort. APL AeroLux combines a lightweight woven textile that is breathable and strong with thin layers of support and vector flow lines to improve airflow around the foot and reduce drag. The Streamline upper features strategic areas of reinforcement to give you the support that you need with the ventilation you desire. The integrated lacing structure allows you to customize your fit to keep your shoes as tight or as loose as you’d like. The Streamline features a Microfiber collar and tongue trim along with a 3D molded, padded heel to reduce friction and make all the inner touch points incredibly comfortable.<br><br>The all-new proprietary APL Soufflé sockliner provides a final layer of long lasting, superior cushioning that makes this incredible performance runner have the step in comfort of a recovery shoe. The APL Streamline encourages you to keep moving forward, as fast as you can. <meta charset=\"utf-8\"><span data-mce-fragment=\"1\">8MM drop. Weight: 9.2 oz.</span>",
-                "product_type": "FOOTWEAR - MEN'S",
-                "properties": {},
-                "sku": "840222812162",
-                "variant_title": "Men's Streamline Pristine / Multi / Rainbow - PRISTINE / MULTI  /  RAINBOW / 8",
-                "vendor": "Athletic Propulsion Labs"
-            }
-        ],
-        "item_count": 2,
-        "total_price": 66290,
-        "local": {
-            "total_price": {
-                "currency": "CAD",
-                "amount": 662.9,
-                "label": "CA$662.90",
-                "base": {
-                    "amount": 500.02,
-                    "currency": "USD",
-                    "label": "US$500.02"
-                }
-            },
-            "promotions": {
-                "applied": [],
-                "available": []
-            },
-            "subtotal": {
-                "currency": "CAD",
-                "amount": 662.9,
-                "label": "CA$662.90",
-                "base": {
-                    "amount": 500.02,
-                    "currency": "USD",
-                    "label": "US$500.02"
-                }
-            }
-        },
-        "requires_shipping": true,
-        "attributes": {
-            "pricing_key": "{\"vat\":\"displayed\",\"duty\":\"displayed\",\"rounding\":{\"type\":\"pattern\",\"method\":\"nearest\",\"value\":0.95}}",
-            "flow_vat_name": "GST",
-            "flow_duty_name": "Duties",
-            "flow_checkout_behavior_customer_email_prompt": "incomplete",
-            "flow_checkout_behavior_shipping_method_prompt": "multiple",
-            "flow_checkout_behavior_shipping_address_prompt": "incomplete",
-            "checkout-persistence": "true"
-        }
-    },
+    "defaultPayment": "card",
     "order": {
-        "id": "ord-fb143f143a60469489610991211b0c52",
-        "number": "F466082",
+        "id": "ord-d58df150beae4a93afa87d3884339c3b",
+        "number": "F466795",
         "order_type": "standard",
         "customer": {
             "name": {},
-            "email": "joncairo@gmail.com",
             "address": {
                 "name": {},
                 "country": "CAN"
@@ -142,27 +13,16 @@
         },
         "delivered_duty": "paid",
         "destination": {
-            "streets": [
-                "1 - 2560 Pegasus Boulevard  NW"
-            ],
-            "city": "Edmonton",
-            "province": "Alberta",
-            "postal": "T5E6V4",
             "country": "CAN",
             "contact": {
-                "name": {
-                    "first": "Jonathan",
-                    "last": "Cairo"
-                },
-                "company": "Miga Commercial Holdings Corp.",
-                "phone": "7809510883"
+                "name": {}
             }
         },
-        "expires_at": "2021-09-24T01:34:11.232Z",
+        "expires_at": "2021-09-25T00:44:37.542Z",
         "items": [
             {
-                "number": "39286704635977",
-                "name": "Women's TechLoom Bliss Impulse Red / Silver / White - IMPULSE RED / SILVER / WHITE / 7.5",
+                "number": "39286708797513",
+                "name": "Men's TechLoom Wave White / Almond / Marble - WHITE / ALMOND / MARBLE / 14",
                 "quantity": 1,
                 "local": {
                     "experience": {
@@ -173,130 +33,40 @@
                     "prices": [
                         {
                             "currency": "CAD",
-                            "amount": 264.95,
-                            "label": "CA$264.95",
+                            "amount": 321.95,
+                            "label": "CA$321.95",
                             "base": {
-                                "amount": 199.85,
+                                "amount": 244.89,
                                 "currency": "USD",
-                                "label": "US$199.85"
+                                "label": "US$244.89"
                             },
                             "includes": {
                                 "key": "none",
-                                "label": "GST and duty not included"
+                                "label": "HST and duty not included"
                             },
                             "key": "localized_item_price"
                         },
                         {
                             "currency": "CAD",
-                            "amount": 15.64,
-                            "label": "CA$15.64",
+                            "amount": 57,
+                            "label": "CA$57.00",
                             "base": {
-                                "amount": 11.79,
+                                "amount": 43.35,
                                 "currency": "USD",
-                                "label": "US$11.79"
+                                "label": "US$43.35"
                             },
-                            "name": "GST",
+                            "name": "HST",
                             "accuracy": "calculated",
                             "key": "localized_item_vat"
                         },
                         {
                             "currency": "CAD",
-                            "amount": 47.69,
-                            "label": "CA$47.69",
+                            "amount": 57.95,
+                            "label": "CA$57.95",
                             "base": {
-                                "amount": 35.97,
+                                "amount": 44.08,
                                 "currency": "USD",
-                                "label": "US$35.97"
-                            },
-                            "key": "localized_item_duty"
-                        }
-                    ],
-                    "rates": [],
-                    "spot_rates": [],
-                    "status": "included",
-                    "attributes": {
-                        "weight": "2.77",
-                        "display_variant_title": "IMPULSE RED / SILVER / WHITE / 7.5",
-                        "url": "https://www.athleticpropulsionlabs.com/products/womens-techloom-bliss-impulse-red-silver-white?variant=39286704635977",
-                        "option1": "IMPULSE RED / SILVER / WHITE",
-                        "weight_unit": "lb",
-                        "product_handle": "womens-techloom-bliss-impulse-red-silver-white",
-                        "product_type": "FOOTWEAR - WOMEN'S",
-                        "fulfillment_service": "manual",
-                        "taxable": "true",
-                        "product_id": "6562283061321",
-                        "option2": "7.5",
-                        "vendor": "Athletic Propulsion Labs",
-                        "inventory_policy": "deny",
-                        "sku": "840222816597",
-                        "source": "shopify",
-                        "barcode": "840222816597",
-                        "inventory_management": "shopify",
-                        "product_title": "Women's TechLoom Bliss Impulse Red / Silver / White",
-                        "requires_shipping": "true",
-                        "variant_title": "IMPULSE RED / SILVER / WHITE / 7.5",
-                        "grams": "1256.0",
-                        "fulfillment_method": "physical"
-                    },
-                    "price_attributes": {}
-                },
-                "id": "lin-8eff11e54e5d4542807af745565da9d2",
-                "attributes": {},
-                "price_source": {
-                    "price": {
-                        "amount": 200,
-                        "currency": "USD"
-                    },
-                    "discriminator": "catalog"
-                }
-            },
-            {
-                "number": "31891893125193",
-                "name": "Men's Streamline Pristine / Multi / Rainbow - PRISTINE / MULTI  /  RAINBOW / 8",
-                "quantity": 1,
-                "local": {
-                    "experience": {
-                        "id": "exp-f0bad7b182b24e0d96d1f23ac55b08c4",
-                        "key": "canada",
-                        "name": "Canada"
-                    },
-                    "prices": [
-                        {
-                            "currency": "CAD",
-                            "amount": 397.95,
-                            "label": "CA$397.95",
-                            "base": {
-                                "amount": 300.17,
-                                "currency": "USD",
-                                "label": "US$300.17"
-                            },
-                            "includes": {
-                                "key": "none",
-                                "label": "GST and duty not included"
-                            },
-                            "key": "localized_item_price"
-                        },
-                        {
-                            "currency": "CAD",
-                            "amount": 23.48,
-                            "label": "CA$23.48",
-                            "base": {
-                                "amount": 17.71,
-                                "currency": "USD",
-                                "label": "US$17.71"
-                            },
-                            "name": "GST",
-                            "accuracy": "calculated",
-                            "key": "localized_item_vat"
-                        },
-                        {
-                            "currency": "CAD",
-                            "amount": 71.63,
-                            "label": "CA$71.63",
-                            "base": {
-                                "amount": 54.03,
-                                "currency": "USD",
-                                "label": "US$54.03"
+                                "label": "US$44.08"
                             },
                             "key": "localized_item_duty"
                         }
@@ -306,35 +76,35 @@
                     "status": "included",
                     "attributes": {
                         "weight": "2.44",
-                        "display_variant_title": "PRISTINE / MULTI  /  RAINBOW / 8",
-                        "url": "https://www.athleticpropulsionlabs.com/products/mens-streamline-pristine-multi-rainbow?variant=31891893125193",
-                        "option1": "PRISTINE / MULTI  /  RAINBOW",
+                        "display_variant_title": "WHITE / ALMOND / MARBLE / 14",
+                        "url": "https://www.athleticpropulsionlabs.com/products/mens-tecloom-wave-white-almond-marble?variant=39286708797513",
+                        "option1": "WHITE / ALMOND / MARBLE",
                         "weight_unit": "lb",
-                        "product_handle": "mens-streamline-pristine-multi-rainbow",
+                        "product_handle": "mens-tecloom-wave-white-almond-marble",
                         "product_type": "FOOTWEAR - MEN'S",
                         "fulfillment_service": "manual",
                         "taxable": "true",
-                        "product_id": "4595672219721",
-                        "option2": "8",
+                        "product_id": "6562283356233",
+                        "option2": "14",
                         "vendor": "Athletic Propulsion Labs",
                         "inventory_policy": "deny",
-                        "sku": "840222812162",
+                        "sku": "840222826190",
                         "source": "shopify",
-                        "barcode": "840222812162",
+                        "barcode": "840222826190",
                         "inventory_management": "shopify",
-                        "product_title": "Men's Streamline Pristine / Multi / Rainbow",
+                        "product_title": "Men's TechLoom Wave White / Almond / Marble",
                         "requires_shipping": "true",
-                        "variant_title": "PRISTINE / MULTI  /  RAINBOW / 8",
+                        "variant_title": "WHITE / ALMOND / MARBLE / 14",
                         "grams": "1107.0",
                         "fulfillment_method": "physical"
                     },
                     "price_attributes": {}
                 },
-                "id": "lin-5ed4e9f188a241b68ec4796b9f220f26",
+                "id": "lin-4c088652938345ec9caa282d5b47f9f5",
                 "attributes": {},
                 "price_source": {
                     "price": {
-                        "amount": 300,
+                        "amount": 245,
                         "currency": "USD"
                     },
                     "discriminator": "catalog"
@@ -343,158 +113,32 @@
         ],
         "deliveries": [
             {
-                "id": "del-8559989f444e4a4bb3ac055457af417e",
+                "id": "del-a3946ac5ea6e4c75b2a6d64a254920f7",
                 "items": [
                     {
-                        "number": "39286704635977",
+                        "number": "39286708797513",
                         "quantity": 1,
                         "price": {
                             "currency": "CAD",
-                            "amount": 264.95,
-                            "label": "CA$264.95",
+                            "amount": 321.95,
                             "base": {
-                                "amount": 199.85,
-                                "currency": "USD",
-                                "label": "US$199.85"
+                                "amount": 244.89,
+                                "currency": "USD"
                             }
                         },
-                        "attributes": {},
-                        "line_number": 0,
-                        "item_number": "39286704635977",
-                        "total": {
-                            "currency": "CAD",
-                            "amount": 264.95,
-                            "label": "CA$264.95",
-                            "base": {
-                                "amount": 199.85,
-                                "currency": "USD",
-                                "label": "US$199.85"
-                            }
+                        "attributes": {
+                            "eur_price": "216.77"
                         },
-                        "id": "lin-8eff11e54e5d4542807af745565da9d2",
-                        "shopify": {
-                            "id": "F466082-1",
-                            "handle": "womens-techloom-bliss-impulse-red-silver-white",
-                            "line_price": 26495,
-                            "price": 26495,
-                            "product_id": 6562283061321,
-                            "product_title": "Women's TechLoom Bliss Impulse Red / Silver / White",
-                            "quantity": 1,
-                            "title": "Women's TechLoom Bliss Impulse Red / Silver / White",
-                            "url": "https://www.athleticpropulsionlabs.com/products/womens-techloom-bliss-impulse-red-silver-white?variant=39286704635977",
-                            "variant_id": 39286704635977,
-                            "local": {
-                                "line_price": {
-                                    "currency": "CAD",
-                                    "amount": 264.95,
-                                    "label": "CA$264.95",
-                                    "base": {
-                                        "amount": 199.85,
-                                        "currency": "USD",
-                                        "label": "US$199.85"
-                                    }
-                                },
-                                "price": {
-                                    "currency": "CAD",
-                                    "amount": 264.95,
-                                    "label": "CA$264.95",
-                                    "base": {
-                                        "amount": 199.85,
-                                        "currency": "USD",
-                                        "label": "US$199.85"
-                                    }
-                                }
-                            },
-                            "gift_card": false,
-                            "requires_shipping": true,
-                            "image": "https://cdn.shopify.com/s/files/1/0008/8116/4339/products/techloombliss-impulsered-silver-white-1_400x.jpg?v=1632434627",
-                            "product_description": "The ultimate intersection of luxury and performance, the APL TechLoom Bliss running shoe travels with you through all aspects of your life. Over two years in the making and our lightest running shoe ever at 6.8 oz., the Techloom Bliss running shoe features a stunning slip on design and custom elastic strap that allows for quick ingress and egress providing the ultimate comfort and a seamless fit.<br><br data-mce-fragment=\"1\">Perfect for travel, the Bliss uses APL’s proprietary Propelium® technology, designed to maximize energy generation and provide superior comfort while it maintains midsole structural integrity longer than conventional EVA. Our proprietary lightweight Propelium® midsole and traction pattern incorporate a durable rubber outsole with a forefoot crash pad, for the lightest APL running shoe yet. 8mm drop. Wt. 6.8 oz.<br><br data-mce-fragment=\"1\"><strong>All of our shoes are unisex. If your size is sold out, simply select a men's size on the site and adjust the fit down by a size and half. For example, a size 9 in women's is a size 7.5 in men’s.</strong>",
-                            "product_type": "FOOTWEAR - WOMEN'S",
-                            "properties": {},
-                            "sku": "840222816597",
-                            "variant_title": "Women's TechLoom Bliss Impulse Red / Silver / White - IMPULSE RED / SILVER / WHITE / 7.5",
-                            "vendor": "Athletic Propulsion Labs"
-                        }
-                    },
-                    {
-                        "number": "31891893125193",
-                        "quantity": 1,
-                        "price": {
-                            "currency": "CAD",
-                            "amount": 397.95,
-                            "label": "CA$397.95",
-                            "base": {
-                                "amount": 300.17,
-                                "currency": "USD",
-                                "label": "US$300.17"
-                            }
-                        },
-                        "attributes": {},
-                        "line_number": 1,
-                        "item_number": "31891893125193",
-                        "total": {
-                            "currency": "CAD",
-                            "amount": 397.95,
-                            "label": "CA$397.95",
-                            "base": {
-                                "amount": 300.17,
-                                "currency": "USD",
-                                "label": "US$300.17"
-                            }
-                        },
-                        "id": "lin-5ed4e9f188a241b68ec4796b9f220f26",
-                        "shopify": {
-                            "id": "F466082-2",
-                            "handle": "mens-streamline-pristine-multi-rainbow",
-                            "line_price": 39795,
-                            "price": 39795,
-                            "product_id": 4595672219721,
-                            "product_title": "Men's Streamline Pristine / Multi / Rainbow",
-                            "quantity": 1,
-                            "title": "Men's Streamline Pristine / Multi / Rainbow",
-                            "url": "https://www.athleticpropulsionlabs.com/products/mens-streamline-pristine-multi-rainbow?variant=31891893125193",
-                            "variant_id": 31891893125193,
-                            "local": {
-                                "line_price": {
-                                    "currency": "CAD",
-                                    "amount": 397.95,
-                                    "label": "CA$397.95",
-                                    "base": {
-                                        "amount": 300.17,
-                                        "currency": "USD",
-                                        "label": "US$300.17"
-                                    }
-                                },
-                                "price": {
-                                    "currency": "CAD",
-                                    "amount": 397.95,
-                                    "label": "CA$397.95",
-                                    "base": {
-                                        "amount": 300.17,
-                                        "currency": "USD",
-                                        "label": "US$300.17"
-                                    }
-                                }
-                            },
-                            "gift_card": false,
-                            "requires_shipping": true,
-                            "image": "https://cdn.shopify.com/s/files/1/0008/8116/4339/products/streamline-pristine-multi-rainbow-1_400x.jpg?v=1625861319",
-                            "product_description": "<strong>NEW l</strong> APL is always pushing the limits of what’s possible in performance and our newest introduction the Streamline is our purest, most purpose built running shoe to date. A streamline, by definition, is a design that presents very little resistance to a flow of air, increasing speed and ease of movement. To achieve the superior comfort, cushioning and speed that the APL Streamline delivers, we created a completely new midsole and outsole made from our newest compound; APL FutureFoam.<br><br>The APL FutureFoam running midsole compound was developed to provide exceptional compression, rebound and energy return through strenuous testing over the past 24 months. The midsole surface features horizontal channels carved by the wind to make each stride smoothly flow through the air. Additionally, a slanted, forward leaning shank plate is sandwiched between the two-piece midsole to help promote forward motion upon foot strike, and accelerate the gate cycle. The midsole sits atop a lightweight, two-piece rubber outsole that provides excellent traction along your journey.<br><br>The upper of the APL Streamline continues the lightweight story using our newest upper innovation, APL AeroLux; a combination of materials all working together to provide ultimate performance and comfort. APL AeroLux combines a lightweight woven textile that is breathable and strong with thin layers of support and vector flow lines to improve airflow around the foot and reduce drag. The Streamline upper features strategic areas of reinforcement to give you the support that you need with the ventilation you desire. The integrated lacing structure allows you to customize your fit to keep your shoes as tight or as loose as you’d like. The Streamline features a Microfiber collar and tongue trim along with a 3D molded, padded heel to reduce friction and make all the inner touch points incredibly comfortable.<br><br>The all-new proprietary APL Soufflé sockliner provides a final layer of long lasting, superior cushioning that makes this incredible performance runner have the step in comfort of a recovery shoe. The APL Streamline encourages you to keep moving forward, as fast as you can. <meta charset=\"utf-8\"><span data-mce-fragment=\"1\">8MM drop. Weight: 9.2 oz.</span>",
-                            "product_type": "FOOTWEAR - MEN'S",
-                            "properties": {},
-                            "sku": "840222812162",
-                            "variant_title": "Men's Streamline Pristine / Multi / Rainbow - PRISTINE / MULTI  /  RAINBOW / 8",
-                            "vendor": "Athletic Propulsion Labs"
-                        }
+                        "line_number": 0
                     }
                 ],
                 "options": [
                     {
-                        "id": "opt-a4cc8768b08547eca43f25bd42242338",
+                        "id": "opt-1768a70995734da59a2e178c4c0133ab",
                         "cost": {
                             "currency": "CAD",
-                            "amount": 27.91,
-                            "label": "CA$27.91",
+                            "amount": 27.67,
+                            "label": "CA$27.67",
                             "base": {
                                 "amount": 21.053,
                                 "currency": "USD",
@@ -504,14 +148,14 @@
                                 {
                                     "source": "ratecard",
                                     "currency": "CAD",
-                                    "amount": 27.91,
-                                    "label": "CA$27.91",
+                                    "amount": 27.67,
+                                    "label": "CA$27.67",
                                     "components": [
                                         {
                                             "key": "ratecard_fuel_surcharge",
                                             "currency": "CAD",
-                                            "amount": 2.48,
-                                            "label": "CA$2.48",
+                                            "amount": 2.46,
+                                            "label": "CA$2.46",
                                             "base": {
                                                 "amount": 1.873,
                                                 "currency": "USD",
@@ -521,8 +165,8 @@
                                         {
                                             "key": "ratecard_emergency_situation_surcharge_fee",
                                             "currency": "CAD",
-                                            "amount": 0.6,
-                                            "label": "CA$0.60",
+                                            "amount": 0.59,
+                                            "label": "CA$0.59",
                                             "base": {
                                                 "amount": 0.44999999999999996,
                                                 "currency": "USD",
@@ -532,8 +176,8 @@
                                         {
                                             "key": "ratecard_base_cost",
                                             "currency": "CAD",
-                                            "amount": 24.83,
-                                            "label": "CA$24.83",
+                                            "amount": 24.62,
+                                            "label": "CA$24.62",
                                             "base": {
                                                 "amount": 18.73,
                                                 "currency": "USD",
@@ -552,8 +196,8 @@
                         "delivered_duty": "paid",
                         "price": {
                             "currency": "CAD",
-                            "amount": 27.91,
-                            "label": "CA$27.91",
+                            "amount": 27.68,
+                            "label": "CA$27.68",
                             "base": {
                                 "amount": 21.05,
                                 "currency": "USD",
@@ -580,7 +224,7 @@
                             "display": {
                                 "estimate": {
                                     "type": "calculated",
-                                    "label": "1-4 Business Days"
+                                    "label": "3-6 Business Days"
                                 }
                             },
                             "settings": {
@@ -588,17 +232,17 @@
                             }
                         },
                         "window": {
-                            "from": "2021-09-27T00:00:00.000Z",
-                            "to": "2021-09-30T00:00:00.000Z",
+                            "from": "2021-09-29T00:00:00.000Z",
+                            "to": "2021-10-04T00:00:00.000Z",
                             "timezone": "America/Toronto",
-                            "label": "1-4 Business Days"
+                            "label": "3-6 Business Days"
                         },
                         "rule_outcome": {
                             "discriminator": "at_cost"
                         },
                         "weight": {
                             "gravitational": {
-                                "value": "4.00",
+                                "value": "2.00",
                                 "units": "pound"
                             },
                             "dimensional": {
@@ -609,7 +253,7 @@
                         "ratecard_owner": "flow"
                     }
                 ],
-                "key": "F466082",
+                "key": "F466795",
                 "center": {
                     "id": "cen-a75f06713f83415bb33899691623e92c",
                     "key": "default",
@@ -632,35 +276,35 @@
                     {
                         "key": "subtotal",
                         "currency": "CAD",
-                        "amount": 662.9,
-                        "label": "CA$662.90",
+                        "amount": 321.95,
+                        "label": "CA$321.95",
                         "base": {
-                            "amount": 500.02,
+                            "amount": 244.89,
                             "currency": "USD",
-                            "label": "US$500.02"
+                            "label": "US$244.89"
                         },
                         "components": [
                             {
                                 "key": "item_price",
                                 "currency": "CAD",
-                                "amount": 662.87,
-                                "label": "CA$662.87",
+                                "amount": 322.1,
+                                "label": "CA$322.10",
                                 "base": {
-                                    "amount": 500,
+                                    "amount": 245,
                                     "currency": "USD",
-                                    "label": "US$500.00"
+                                    "label": "US$245.00"
                                 },
                                 "name": "Item price"
                             },
                             {
                                 "key": "rounding",
                                 "currency": "CAD",
-                                "amount": 0.03,
-                                "label": "CA$0.03",
+                                "amount": -0.15,
+                                "label": "-CA$0.15",
                                 "base": {
-                                    "amount": 0.02,
+                                    "amount": -0.11,
                                     "currency": "USD",
-                                    "label": "US$0.02"
+                                    "label": "-US$0.11"
                                 },
                                 "name": "Rounding"
                             }
@@ -671,8 +315,8 @@
                     {
                         "key": "shipping",
                         "currency": "CAD",
-                        "amount": 27.91,
-                        "label": "CA$27.91",
+                        "amount": 27.68,
+                        "label": "CA$27.68",
                         "base": {
                             "amount": 21.05,
                             "currency": "USD",
@@ -682,8 +326,8 @@
                             {
                                 "key": "shipping",
                                 "currency": "CAD",
-                                "amount": 27.91,
-                                "label": "CA$27.91",
+                                "amount": 27.68,
+                                "label": "CA$27.68",
                                 "base": {
                                     "amount": 21.05,
                                     "currency": "USD",
@@ -698,23 +342,23 @@
                     {
                         "key": "duty",
                         "currency": "CAD",
-                        "amount": 119.32,
-                        "label": "CA$119.32",
+                        "amount": 57.95,
+                        "label": "CA$57.95",
                         "base": {
-                            "amount": 90,
+                            "amount": 44.08,
                             "currency": "USD",
-                            "label": "US$90.00"
+                            "label": "US$44.08"
                         },
                         "components": [
                             {
                                 "key": "duties_item_price",
                                 "currency": "CAD",
-                                "amount": 119.32,
-                                "label": "CA$119.32",
+                                "amount": 57.95,
+                                "label": "CA$57.95",
                                 "base": {
-                                    "amount": 90,
+                                    "amount": 44.08,
                                     "currency": "USD",
-                                    "label": "US$90.00"
+                                    "label": "US$44.08"
                                 },
                                 "name": "Duties on item price"
                             }
@@ -725,95 +369,94 @@
                     {
                         "key": "vat",
                         "currency": "CAD",
-                        "amount": 39.12,
-                        "label": "CA$39.12",
+                        "amount": 57,
+                        "label": "CA$57.00",
                         "base": {
-                            "amount": 29.5,
+                            "amount": 43.35,
                             "currency": "USD",
-                            "label": "US$29.50"
+                            "label": "US$43.35"
                         },
                         "components": [
                             {
                                 "key": "vat_item_price",
                                 "currency": "CAD",
-                                "amount": 33.15,
-                                "label": "CA$33.15",
+                                "amount": 48.3,
+                                "label": "CA$48.30",
                                 "base": {
-                                    "amount": 25,
+                                    "amount": 36.73,
                                     "currency": "USD",
-                                    "label": "US$25.00"
+                                    "label": "US$36.73"
                                 },
-                                "name": "GST on item price"
+                                "name": "HST on item price"
                             },
                             {
                                 "key": "vat_duties_item_price",
                                 "currency": "CAD",
-                                "amount": 5.97,
-                                "label": "CA$5.97",
+                                "amount": 8.7,
+                                "label": "CA$8.70",
                                 "base": {
-                                    "amount": 4.5,
+                                    "amount": 6.62,
                                     "currency": "USD",
-                                    "label": "US$4.50"
+                                    "label": "US$6.62"
                                 },
-                                "name": "GST on duties on item price"
+                                "name": "HST on duties on item price"
                             }
                         ],
                         "accuracy": "calculated",
-                        "name": "GST"
+                        "name": "HST"
                     }
                 ],
                 "total": {
                     "currency": "CAD",
-                    "amount": 849.25,
-                    "label": "CA$849.25",
+                    "amount": 464.58,
+                    "label": "CA$464.58",
                     "base": {
-                        "amount": 640.57,
+                        "amount": 353.37,
                         "currency": "USD",
-                        "label": "US$640.57"
+                        "label": "US$353.37"
                     },
                     "key": "localized_total"
                 },
                 "goods_supply": "export",
-                "discriminator": "physical_delivery",
-                "selection": "opt-a4cc8768b08547eca43f25bd42242338"
+                "discriminator": "physical_delivery"
             }
         ],
         "selections": [
-            "opt-a4cc8768b08547eca43f25bd42242338"
+            "opt-1768a70995734da59a2e178c4c0133ab"
         ],
         "prices": [
             {
                 "key": "subtotal",
                 "currency": "CAD",
-                "amount": 662.9,
-                "label": "CA$662.90",
+                "amount": 321.95,
+                "label": "CA$321.95",
                 "base": {
-                    "amount": 500.02,
+                    "amount": 244.89,
                     "currency": "USD",
-                    "label": "US$500.02"
+                    "label": "US$244.89"
                 },
                 "components": [
                     {
                         "key": "item_price",
                         "currency": "CAD",
-                        "amount": 662.87,
-                        "label": "CA$662.87",
+                        "amount": 322.1,
+                        "label": "CA$322.10",
                         "base": {
-                            "amount": 500,
+                            "amount": 245,
                             "currency": "USD",
-                            "label": "US$500.00"
+                            "label": "US$245.00"
                         },
                         "name": "Item price"
                     },
                     {
                         "key": "rounding",
                         "currency": "CAD",
-                        "amount": 0.03,
-                        "label": "CA$0.03",
+                        "amount": -0.15,
+                        "label": "-CA$0.15",
                         "base": {
-                            "amount": 0.02,
+                            "amount": -0.11,
                             "currency": "USD",
-                            "label": "US$0.02"
+                            "label": "-US$0.11"
                         },
                         "name": "Rounding"
                     }
@@ -824,8 +467,8 @@
             {
                 "key": "shipping",
                 "currency": "CAD",
-                "amount": 27.91,
-                "label": "CA$27.91",
+                "amount": 27.68,
+                "label": "CA$27.68",
                 "base": {
                     "amount": 21.05,
                     "currency": "USD",
@@ -835,8 +478,8 @@
                     {
                         "key": "shipping",
                         "currency": "CAD",
-                        "amount": 27.91,
-                        "label": "CA$27.91",
+                        "amount": 27.68,
+                        "label": "CA$27.68",
                         "base": {
                             "amount": 21.05,
                             "currency": "USD",
@@ -851,23 +494,23 @@
             {
                 "key": "duty",
                 "currency": "CAD",
-                "amount": 119.32,
-                "label": "CA$119.32",
+                "amount": 57.95,
+                "label": "CA$57.95",
                 "base": {
-                    "amount": 90,
+                    "amount": 44.08,
                     "currency": "USD",
-                    "label": "US$90.00"
+                    "label": "US$44.08"
                 },
                 "components": [
                     {
                         "key": "duties_item_price",
                         "currency": "CAD",
-                        "amount": 119.32,
-                        "label": "CA$119.32",
+                        "amount": 57.95,
+                        "label": "CA$57.95",
                         "base": {
-                            "amount": 90,
+                            "amount": 44.08,
                             "currency": "USD",
-                            "label": "US$90.00"
+                            "label": "US$44.08"
                         },
                         "name": "Duties on item price"
                     }
@@ -878,62 +521,61 @@
             {
                 "key": "vat",
                 "currency": "CAD",
-                "amount": 39.12,
-                "label": "CA$39.12",
+                "amount": 57,
+                "label": "CA$57.00",
                 "base": {
-                    "amount": 29.5,
+                    "amount": 43.35,
                     "currency": "USD",
-                    "label": "US$29.50"
+                    "label": "US$43.35"
                 },
                 "components": [
                     {
                         "key": "vat_item_price",
                         "currency": "CAD",
-                        "amount": 33.15,
-                        "label": "CA$33.15",
+                        "amount": 48.3,
+                        "label": "CA$48.30",
                         "base": {
-                            "amount": 25,
+                            "amount": 36.73,
                             "currency": "USD",
-                            "label": "US$25.00"
+                            "label": "US$36.73"
                         },
-                        "name": "GST on item price"
+                        "name": "HST on item price"
                     },
                     {
                         "key": "vat_duties_item_price",
                         "currency": "CAD",
-                        "amount": 5.97,
-                        "label": "CA$5.97",
+                        "amount": 8.7,
+                        "label": "CA$8.70",
                         "base": {
-                            "amount": 4.5,
+                            "amount": 6.62,
                             "currency": "USD",
-                            "label": "US$4.50"
+                            "label": "US$6.62"
                         },
-                        "name": "GST on duties on item price"
+                        "name": "HST on duties on item price"
                     }
                 ],
                 "accuracy": "calculated",
-                "name": "GST"
+                "name": "HST"
             }
         ],
         "total": {
             "currency": "CAD",
-            "amount": 849.25,
-            "label": "CA$849.25",
+            "amount": 464.58,
+            "label": "CA$464.58",
             "base": {
-                "amount": 640.57,
+                "amount": 353.37,
                 "currency": "USD",
-                "label": "US$640.57"
+                "label": "US$353.37"
             },
             "key": "localized_total"
         },
         "attributes": {
             "pricing_key": "{\"vat\":\"displayed\",\"duty\":\"displayed\",\"rounding\":{\"type\":\"pattern\",\"method\":\"nearest\",\"value\":0.95}}",
-            "flow_vat_name": "GST",
+            "flow_vat_name": "HST",
             "flow_duty_name": "Duties",
             "flow_checkout_behavior_customer_email_prompt": "incomplete",
             "flow_checkout_behavior_shipping_method_prompt": "multiple",
-            "flow_checkout_behavior_shipping_address_prompt": "incomplete",
-            "checkout-persistence": "true"
+            "flow_checkout_behavior_shipping_address_prompt": "incomplete"
         },
         "experience": {
             "id": "exp-f0bad7b182b24e0d96d1f23ac55b08c4",
@@ -981,142 +623,30 @@
         },
         "lines": [
             {
-                "item_number": "39286704635977",
+                "item_number": "39286708797513",
                 "quantity": 1,
                 "price": {
                     "currency": "CAD",
-                    "amount": 264.95,
-                    "label": "CA$264.95",
+                    "amount": 321.95,
+                    "label": "CA$321.95",
                     "base": {
-                        "amount": 199.85,
+                        "amount": 244.89,
                         "currency": "USD",
-                        "label": "US$199.85"
+                        "label": "US$244.89"
                     }
                 },
                 "total": {
                     "currency": "CAD",
-                    "amount": 264.95,
-                    "label": "CA$264.95",
+                    "amount": 321.95,
+                    "label": "CA$321.95",
                     "base": {
-                        "amount": 199.85,
+                        "amount": 244.89,
                         "currency": "USD",
-                        "label": "US$199.85"
+                        "label": "US$244.89"
                     }
                 },
-                "id": "lin-8eff11e54e5d4542807af745565da9d2",
-                "attributes": {},
-                "shopify": {
-                    "id": "F466082-1",
-                    "handle": "womens-techloom-bliss-impulse-red-silver-white",
-                    "line_price": 26495,
-                    "price": 26495,
-                    "product_id": 6562283061321,
-                    "product_title": "Women's TechLoom Bliss Impulse Red / Silver / White",
-                    "quantity": 1,
-                    "title": "Women's TechLoom Bliss Impulse Red / Silver / White",
-                    "url": "https://www.athleticpropulsionlabs.com/products/womens-techloom-bliss-impulse-red-silver-white?variant=39286704635977",
-                    "variant_id": 39286704635977,
-                    "local": {
-                        "line_price": {
-                            "currency": "CAD",
-                            "amount": 264.95,
-                            "label": "CA$264.95",
-                            "base": {
-                                "amount": 199.85,
-                                "currency": "USD",
-                                "label": "US$199.85"
-                            }
-                        },
-                        "price": {
-                            "currency": "CAD",
-                            "amount": 264.95,
-                            "label": "CA$264.95",
-                            "base": {
-                                "amount": 199.85,
-                                "currency": "USD",
-                                "label": "US$199.85"
-                            }
-                        }
-                    },
-                    "gift_card": false,
-                    "requires_shipping": true,
-                    "image": "https://cdn.shopify.com/s/files/1/0008/8116/4339/products/techloombliss-impulsered-silver-white-1_400x.jpg?v=1632434627",
-                    "product_description": "The ultimate intersection of luxury and performance, the APL TechLoom Bliss running shoe travels with you through all aspects of your life. Over two years in the making and our lightest running shoe ever at 6.8 oz., the Techloom Bliss running shoe features a stunning slip on design and custom elastic strap that allows for quick ingress and egress providing the ultimate comfort and a seamless fit.<br><br data-mce-fragment=\"1\">Perfect for travel, the Bliss uses APL’s proprietary Propelium® technology, designed to maximize energy generation and provide superior comfort while it maintains midsole structural integrity longer than conventional EVA. Our proprietary lightweight Propelium® midsole and traction pattern incorporate a durable rubber outsole with a forefoot crash pad, for the lightest APL running shoe yet. 8mm drop. Wt. 6.8 oz.<br><br data-mce-fragment=\"1\"><strong>All of our shoes are unisex. If your size is sold out, simply select a men's size on the site and adjust the fit down by a size and half. For example, a size 9 in women's is a size 7.5 in men’s.</strong>",
-                    "product_type": "FOOTWEAR - WOMEN'S",
-                    "properties": {},
-                    "sku": "840222816597",
-                    "variant_title": "Women's TechLoom Bliss Impulse Red / Silver / White - IMPULSE RED / SILVER / WHITE / 7.5",
-                    "vendor": "Athletic Propulsion Labs"
-                }
-            },
-            {
-                "item_number": "31891893125193",
-                "quantity": 1,
-                "price": {
-                    "currency": "CAD",
-                    "amount": 397.95,
-                    "label": "CA$397.95",
-                    "base": {
-                        "amount": 300.17,
-                        "currency": "USD",
-                        "label": "US$300.17"
-                    }
-                },
-                "total": {
-                    "currency": "CAD",
-                    "amount": 397.95,
-                    "label": "CA$397.95",
-                    "base": {
-                        "amount": 300.17,
-                        "currency": "USD",
-                        "label": "US$300.17"
-                    }
-                },
-                "id": "lin-5ed4e9f188a241b68ec4796b9f220f26",
-                "attributes": {},
-                "shopify": {
-                    "id": "F466082-2",
-                    "handle": "mens-streamline-pristine-multi-rainbow",
-                    "line_price": 39795,
-                    "price": 39795,
-                    "product_id": 4595672219721,
-                    "product_title": "Men's Streamline Pristine / Multi / Rainbow",
-                    "quantity": 1,
-                    "title": "Men's Streamline Pristine / Multi / Rainbow",
-                    "url": "https://www.athleticpropulsionlabs.com/products/mens-streamline-pristine-multi-rainbow?variant=31891893125193",
-                    "variant_id": 31891893125193,
-                    "local": {
-                        "line_price": {
-                            "currency": "CAD",
-                            "amount": 397.95,
-                            "label": "CA$397.95",
-                            "base": {
-                                "amount": 300.17,
-                                "currency": "USD",
-                                "label": "US$300.17"
-                            }
-                        },
-                        "price": {
-                            "currency": "CAD",
-                            "amount": 397.95,
-                            "label": "CA$397.95",
-                            "base": {
-                                "amount": 300.17,
-                                "currency": "USD",
-                                "label": "US$300.17"
-                            }
-                        }
-                    },
-                    "gift_card": false,
-                    "requires_shipping": true,
-                    "image": "https://cdn.shopify.com/s/files/1/0008/8116/4339/products/streamline-pristine-multi-rainbow-1_400x.jpg?v=1625861319",
-                    "product_description": "<strong>NEW l</strong> APL is always pushing the limits of what’s possible in performance and our newest introduction the Streamline is our purest, most purpose built running shoe to date. A streamline, by definition, is a design that presents very little resistance to a flow of air, increasing speed and ease of movement. To achieve the superior comfort, cushioning and speed that the APL Streamline delivers, we created a completely new midsole and outsole made from our newest compound; APL FutureFoam.<br><br>The APL FutureFoam running midsole compound was developed to provide exceptional compression, rebound and energy return through strenuous testing over the past 24 months. The midsole surface features horizontal channels carved by the wind to make each stride smoothly flow through the air. Additionally, a slanted, forward leaning shank plate is sandwiched between the two-piece midsole to help promote forward motion upon foot strike, and accelerate the gate cycle. The midsole sits atop a lightweight, two-piece rubber outsole that provides excellent traction along your journey.<br><br>The upper of the APL Streamline continues the lightweight story using our newest upper innovation, APL AeroLux; a combination of materials all working together to provide ultimate performance and comfort. APL AeroLux combines a lightweight woven textile that is breathable and strong with thin layers of support and vector flow lines to improve airflow around the foot and reduce drag. The Streamline upper features strategic areas of reinforcement to give you the support that you need with the ventilation you desire. The integrated lacing structure allows you to customize your fit to keep your shoes as tight or as loose as you’d like. The Streamline features a Microfiber collar and tongue trim along with a 3D molded, padded heel to reduce friction and make all the inner touch points incredibly comfortable.<br><br>The all-new proprietary APL Soufflé sockliner provides a final layer of long lasting, superior cushioning that makes this incredible performance runner have the step in comfort of a recovery shoe. The APL Streamline encourages you to keep moving forward, as fast as you can. <meta charset=\"utf-8\"><span data-mce-fragment=\"1\">8MM drop. Weight: 9.2 oz.</span>",
-                    "product_type": "FOOTWEAR - MEN'S",
-                    "properties": {},
-                    "sku": "840222812162",
-                    "variant_title": "Men's Streamline Pristine / Multi / Rainbow - PRISTINE / MULTI  /  RAINBOW / 8",
-                    "vendor": "Athletic Propulsion Labs"
-                }
+                "id": "lin-4c088652938345ec9caa282d5b47f9f5",
+                "attributes": {}
             }
         ],
         "promotions": {
@@ -1126,12 +656,12 @@
         "payments": [],
         "balance": {
             "currency": "CAD",
-            "amount": 849.25,
-            "label": "CA$849.25",
+            "amount": 464.58,
+            "label": "CA$464.58",
             "base": {
-                "amount": 640.57,
+                "amount": 353.37,
                 "currency": "USD",
-                "label": "US$640.57"
+                "label": "US$353.37"
             },
             "key": "localized_total"
         },
@@ -1142,5 +672,268 @@
             "language": "en"
         },
         "discriminator": "order"
+    },
+    "content": {
+        "itemContents": [
+            {
+                "item": {
+                    "id": "cit-f8b461a9d57e4c818a9fe466909700a2",
+                    "number": "39286708797513",
+                    "locale": "en-US",
+                    "name": "Men's TechLoom Wave White / Almond / Marble - WHITE / ALMOND / MARBLE / 14",
+                    "price": {
+                        "amount": 245,
+                        "currency": "USD",
+                        "label": "US$245.00"
+                    },
+                    "categories": [
+                        "Color: Beige",
+                        "Color: White",
+                        "FA21",
+                        "Footwear: TechLoom Wave",
+                        "Gender: Men",
+                        "Size: 10",
+                        "Size: 11",
+                        "Size: 12",
+                        "Size: 14",
+                        "Size: 7",
+                        "Size: 8",
+                        "Size: 9",
+                        "Type: Running",
+                        "YGroup_mens-techloom-wave",
+                        "FOOTWEAR - MEN'S"
+                    ],
+                    "attributes": {
+                        "weight": "2.44",
+                        "display_variant_title": "WHITE / ALMOND / MARBLE / 14",
+                        "url": "https://www.athleticpropulsionlabs.com/products/mens-tecloom-wave-white-almond-marble?variant=39286708797513",
+                        "option1": "WHITE / ALMOND / MARBLE",
+                        "weight_unit": "lb",
+                        "product_handle": "mens-tecloom-wave-white-almond-marble",
+                        "product_type": "FOOTWEAR - MEN'S",
+                        "fulfillment_service": "manual",
+                        "taxable": "true",
+                        "product_id": "6562283356233",
+                        "option2": "14",
+                        "vendor": "Athletic Propulsion Labs",
+                        "inventory_policy": "deny",
+                        "sku": "840222826190",
+                        "source": "shopify",
+                        "barcode": "840222826190",
+                        "inventory_management": "shopify",
+                        "product_title": "Men's TechLoom Wave White / Almond / Marble",
+                        "requires_shipping": "true",
+                        "variant_title": "WHITE / ALMOND / MARBLE / 14",
+                        "grams": "1107.0",
+                        "fulfillment_method": "physical"
+                    },
+                    "dimensions": {
+                        "product": {
+                            "weight": {
+                                "value": "2.44",
+                                "units": "pound"
+                            }
+                        }
+                    },
+                    "images": [
+                        {
+                            "url": "https://cdn.shopify.com/s/files/1/0008/8116/4339/products/techloomwave-white-almond-marble-1.jpg?v=1629759696",
+                            "tags": [],
+                            "attributes": {
+                                "position": "1"
+                            }
+                        },
+                        {
+                            "url": "https://cdn.shopify.com/s/files/1/0008/8116/4339/products/techloomwave-white-almond-marble-2.jpg?v=1629759701",
+                            "tags": [],
+                            "attributes": {
+                                "position": "2"
+                            }
+                        },
+                        {
+                            "url": "https://cdn.shopify.com/s/files/1/0008/8116/4339/products/techloomwave-white-almond-marble-3.jpg?v=1629759704",
+                            "tags": [],
+                            "attributes": {
+                                "position": "3"
+                            }
+                        },
+                        {
+                            "url": "https://cdn.shopify.com/s/files/1/0008/8116/4339/products/techloomwave-white-almond-marble-4.jpg?v=1629759707",
+                            "tags": [],
+                            "attributes": {
+                                "position": "4"
+                            }
+                        },
+                        {
+                            "url": "https://cdn.shopify.com/s/files/1/0008/8116/4339/products/techloomwave-white-almond-marble-5.jpg?v=1629759710",
+                            "tags": [],
+                            "attributes": {
+                                "position": "5"
+                            }
+                        },
+                        {
+                            "url": "https://cdn.shopify.com/s/files/1/0008/8116/4339/products/techloomwave-white-almond-marble-6.jpg?v=1629759712",
+                            "tags": [],
+                            "attributes": {
+                                "position": "6"
+                            }
+                        },
+                        {
+                            "url": "https://cdn.shopify.com/s/files/1/0008/8116/4339/products/techloomwave-white-almond-marble-1_100x100.jpg?v=1629759696",
+                            "tags": [
+                                "thumbnail",
+                                "checkout"
+                            ],
+                            "attributes": {
+                                "position": "1"
+                            }
+                        },
+                        {
+                            "url": "https://cdn.shopify.com/s/files/1/0008/8116/4339/products/techloomwave-white-almond-marble-2_100x100.jpg?v=1629759701",
+                            "tags": [
+                                "thumbnail",
+                                "checkout"
+                            ],
+                            "attributes": {
+                                "position": "2"
+                            }
+                        },
+                        {
+                            "url": "https://cdn.shopify.com/s/files/1/0008/8116/4339/products/techloomwave-white-almond-marble-3_100x100.jpg?v=1629759704",
+                            "tags": [
+                                "thumbnail",
+                                "checkout"
+                            ],
+                            "attributes": {
+                                "position": "3"
+                            }
+                        },
+                        {
+                            "url": "https://cdn.shopify.com/s/files/1/0008/8116/4339/products/techloomwave-white-almond-marble-4_100x100.jpg?v=1629759707",
+                            "tags": [
+                                "thumbnail",
+                                "checkout"
+                            ],
+                            "attributes": {
+                                "position": "4"
+                            }
+                        },
+                        {
+                            "url": "https://cdn.shopify.com/s/files/1/0008/8116/4339/products/techloomwave-white-almond-marble-5_100x100.jpg?v=1629759710",
+                            "tags": [
+                                "thumbnail",
+                                "checkout"
+                            ],
+                            "attributes": {
+                                "position": "5"
+                            }
+                        },
+                        {
+                            "url": "https://cdn.shopify.com/s/files/1/0008/8116/4339/products/techloomwave-white-almond-marble-6_100x100.jpg?v=1629759712",
+                            "tags": [
+                                "thumbnail",
+                                "checkout"
+                            ],
+                            "attributes": {
+                                "position": "6"
+                            }
+                        }
+                    ],
+                    "description": "Performance design is at the forefront of the TechLoom Wave. Featuring a newly developed high-elastic 3D stretch rebound TechLoom upper that dynamically moves with your feet. The upper is designed to allow increased stretch front to back where your feet articulate, while also providing lateral and medial support. An internal cage provides additional support and customizable lockdown when pulling the laces tight. An integrated lace loop allows you to tuck the laces for a streamline look. The seamless upper design allows you to remove the laces completely to transform the TechLoom Wave into a stylish slip-on with the same great fit.<br><br data-mce-fragment=\"1\">The Wave uses APL’s proprietary Propelium® technology, designed to maximize energy generation and provide superior comfort while it maintains midsole structural integrity longer than conventional EVA. The newly developed midsole and traction pattern incorporate a durable rubber outsole with a forefoot crash pad. 8mm drop. Wt. 7.1 oz.<br><br data-mce-fragment=\"1\"><strong>All of our shoes are unisex. If your size is sold out, simply select a women's size on the site and adjust the fit up by a size and half. For example, a size 7 in men's is a size 8.5 in women's.</strong>",
+                    "local": {
+                        "experience": {
+                            "id": "exp-200711849fc74ef4b7a83833c29f6aab",
+                            "key": "canada",
+                            "name": "Canada",
+                            "country": "CAN",
+                            "currency": "CAD",
+                            "language": "en"
+                        },
+                        "prices": [
+                            {
+                                "currency": "CAD",
+                                "amount": 321.95,
+                                "label": "CA$321.95",
+                                "base": {
+                                    "amount": 244.89,
+                                    "currency": "USD",
+                                    "label": "US$244.89"
+                                },
+                                "includes": {
+                                    "key": "none",
+                                    "label": "HST and duty not included"
+                                },
+                                "key": "localized_item_price"
+                            },
+                            {
+                                "currency": "CAD",
+                                "amount": 57,
+                                "label": "CA$57.00",
+                                "base": {
+                                    "amount": 43.35,
+                                    "currency": "USD",
+                                    "label": "US$43.35"
+                                },
+                                "name": "HST",
+                                "accuracy": "calculated",
+                                "key": "localized_item_vat"
+                            },
+                            {
+                                "currency": "CAD",
+                                "amount": 57.95,
+                                "label": "CA$57.95",
+                                "base": {
+                                    "amount": 44.08,
+                                    "currency": "USD",
+                                    "label": "US$44.08"
+                                },
+                                "key": "localized_item_duty"
+                            }
+                        ],
+                        "rates": [],
+                        "spot_rates": [],
+                        "status": "included",
+                        "attributes": {
+                            "weight": "2.44",
+                            "display_variant_title": "WHITE / ALMOND / MARBLE / 14",
+                            "url": "https://www.athleticpropulsionlabs.com/products/mens-tecloom-wave-white-almond-marble?variant=39286708797513",
+                            "option1": "WHITE / ALMOND / MARBLE",
+                            "weight_unit": "lb",
+                            "product_handle": "mens-tecloom-wave-white-almond-marble",
+                            "product_type": "FOOTWEAR - MEN'S",
+                            "fulfillment_service": "manual",
+                            "taxable": "true",
+                            "product_id": "6562283356233",
+                            "option2": "14",
+                            "vendor": "Athletic Propulsion Labs",
+                            "inventory_policy": "deny",
+                            "sku": "840222826190",
+                            "source": "shopify",
+                            "barcode": "840222826190",
+                            "inventory_management": "shopify",
+                            "product_title": "Men's TechLoom Wave White / Almond / Marble",
+                            "requires_shipping": "true",
+                            "variant_title": "WHITE / ALMOND / MARBLE / 14",
+                            "grams": "1107.0",
+                            "fulfillment_method": "physical"
+                        },
+                        "price_attributes": {}
+                    }
+                },
+                "name": "Men's TechLoom Wave White / Almond / Marble - WHITE / ALMOND / MARBLE / 14",
+                "attributes": [],
+                "description": "Performance design is at the forefront of the TechLoom Wave. Featuring a newly developed high-elastic 3D stretch rebound TechLoom upper that dynamically moves with your feet. The upper is designed to allow increased stretch front to back where your feet articulate, while also providing lateral and medial support. An internal cage provides additional support and customizable lockdown when pulling the laces tight. An integrated lace loop allows you to tuck the laces for a streamline look. The seamless upper design allows you to remove the laces completely to transform the TechLoom Wave into a stylish slip-on with the same great fit.<br><br data-mce-fragment=\"1\">The Wave uses APL’s proprietary Propelium® technology, designed to maximize energy generation and provide superior comfort while it maintains midsole structural integrity longer than conventional EVA. The newly developed midsole and traction pattern incorporate a durable rubber outsole with a forefoot crash pad. 8mm drop. Wt. 7.1 oz.<br><br data-mce-fragment=\"1\"><strong>All of our shoes are unisex. If your size is sold out, simply select a women's size on the site and adjust the fit up by a size and half. For example, a size 7 in men's is a size 8.5 in women's.</strong>",
+                "image": {
+                    "url": "https://cdn.shopify.com/s/files/1/0008/8116/4339/products/techloomwave-white-almond-marble-1_100x100.jpg?v=1629759696",
+                    "tags": [
+                        "thumbnail",
+                        "checkout"
+                    ],
+                    "attributes": {
+                        "position": "1"
+                    }
+                }
+            }
+        ]
     }
 }
