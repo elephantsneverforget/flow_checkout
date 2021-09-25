@@ -162,7 +162,8 @@ function pushDLPurchase(data) {
     // 'Country': data.order.destination.country,
     // 'State': data.order.destination.province,
     'event': 'dl_purchase',
-    // TODO: how do we generate this?
+    // TODO: how do we generate this? Looks like it's just UUID.
+    // Can we generate this ourselves?
     // 'event_id': pass in from previous page? ,
     'ecommerce': {
       'purchase': {

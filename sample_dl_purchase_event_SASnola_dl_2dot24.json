@@ -1,0 +1,52 @@
+{
+    "event": "dl_purchase",
+    "event_id": "03dd3fc0-a11d-4c87-b93d-6e622ef89d94",
+    "ecommerce": {
+        "currencyCode": "USD",
+        "purchase": {
+            "actionField": {
+                "id": 3961501155446,
+                "order_name": "#1023",
+                "revenue": "234.32",
+                "tax": "0.0",
+                "shipping": "41.38",
+                "affiliation": "Elevar GTM App Store",
+                "sub_total": "192.94",
+                "discount_amount": "0.0",
+                "action": "purchase"
+            },
+            "products": [
+                {
+                    "id": "EA-A11346231",
+                    "name": "2016 Easton FS400 -12 Fastpitch Softball Bat: FP16S400",
+                    "brand": "Easton",
+                    "category": "Bats",
+                    "variant": "31\" 19 oz",
+                    "price": "42.99",
+                    "quantity": "1",
+                    "list": "/collections/all",
+                    "product_id": "1614319878262",
+                    "variant_id": "14519100211318",
+                    "image": "//cdn.shopify.com/s/files/1/0069/2469/7718/products/ea-a113462both_1_small.jpg?v=1570015009"
+                },
+                {
+                    "id": "DM-WTDXSNM1628",
+                    "name": "2016 DeMarini Larry Carter Senior Slowpitch Bat: WTDXSNM16",
+                    "brand": "DeMarini",
+                    "category": "Bats",
+                    "variant": "34\" 28 oz",
+                    "price": "149.95",
+                    "quantity": "1",
+                    "list": "/collections/all",
+                    "product_id": "1614317551734",
+                    "variant_id": "14519087857782",
+                    "image": "//cdn.shopify.com/s/files/1/0069/2469/7718/products/dxsnm16_2_small.jpg?v=1570015008"
+                }
+            ]
+        }
+    },
+    "marketing": {
+        "landing_site": "/"
+    },
+    "gtm.uniqueEventId": 9
+}
