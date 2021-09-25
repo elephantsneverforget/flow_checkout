@@ -26,8 +26,8 @@ function pushDLBeginCheckout(data) {
   var productList = getProductsInCart(data);
   window.dataLayer.push({
     'event': 'dl_begin_checkout',
-    // TODO: how do we generate this?
-    // 'event_id': pass in from previous page? ,
+    // TODO: how do we generate this? just use a UUID link in the GTM suite script?
+    // 'event_id': 
     'ecommerce': {
       'checkout': {
         'actionField': { step: 1, action: 'checkout' },
@@ -52,8 +52,7 @@ function pushDLAddShippingInfo(data) {
 
   window.dataLayer.push({
     'event': 'dl_add_shipping_info',
-    // TODO: how do we generate this?
-    // 'event_id': pass in from previous page? ,
+    // 'event_id': 
     'ecommerce': {
       'checkout': {
         'actionField': { step: 2, action: 'checkout' },
@@ -79,8 +78,7 @@ function pushDLAddPaymentInfo(data) {
 
   window.dataLayer.push({
     'event': 'dl_add_payment_info',
-    // TODO: how do we generate this?
-    // 'event_id': pass in from previous page? ,
+    // 'event_id': 
     'ecommerce': {
       'checkout': {
         'actionField': { step: 3, action: 'checkout' },
@@ -106,8 +104,6 @@ function pushDLPurchase(data) {
 
   window.dataLayer.push({
     'event': 'dl_purchase',
-    // TODO: how do we generate this? Looks like it's just UUID.
-    // Can we generate this ourselves?
     // 'event_id': pass in from previous page? ,
     'ecommerce': {
       'purchase': {
@@ -116,7 +112,7 @@ function pushDLPurchase(data) {
           'affiliation': data.organization,
           'discount_amount': data.order.prices[2].amount, // in foreign currency. In USD use data.order.prices[2].base.amount,
           // TODO: Decide whether we want foreign or USD currency. Figure out 'id'
-          'id': '', // If this is the order id that shows in the url in a shopify order it's not in the data object. sample order was 3963211317321,
+          'id': '', // If this is the order id that shows in the url in a shopify order it's not in the data object.
           'order_name': data.order['number'], // This is the order number that shows up in Shopify on orders list page,
           'revenue': data.order.prices[0].amount, // in foreign currency. In USD use data.order.prices[0].base.amount,
           'shipping': data.order.prices[1].amount, // in foreign currency. In USD use data.order.prices[1].base.amount,
@@ -180,7 +176,8 @@ function getMarketingData(urlParams, data) {
   return {
     // TODO: Should we modify the script to set cookie duration?
     // currently set to session expiration.
-    // What if we have no utms?
+    // What if we have no utms? i've seen landing page: '/' here previously.
+    // Should I set that if no UTMS?
     'utm_campaign': urlParams['utm_campaign'],
     'utm_content': urlParams['utm_content'],
     'utm_medium': urlParams['utm_medium'],
