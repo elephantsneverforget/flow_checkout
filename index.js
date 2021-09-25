@@ -165,7 +165,7 @@ function pushDLPurchase(data) {
     // TODO: how do we generate this?
     // 'event_id': pass in from previous page? ,
     'ecommerce': {
-      'checkout': {
+      'purchase': {
         'actionField': {
           'action': "purchase",
           'affiliation': data.organization,
@@ -180,7 +180,7 @@ function pushDLPurchase(data) {
         },
         'products': productList
       },
-      'currencyCode': data.order.total.base.currency
+      'currencyCode': data.order.total.currency // USD data.order.total.base.currency
     },
     'marketing': {
       // TODO: Should we modify the script to set cookie duration?
