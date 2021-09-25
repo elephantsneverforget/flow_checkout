@@ -168,15 +168,15 @@ function pushDLPurchase(data) {
       'checkout': {
         'actionField': {
           'action': "purchase",
-          'affiliation': flowSettings.shopify.entities.shop.myshopify_domain,
-          // TODO: fill these once you have a sample transaction
-          'discount_amount': "0.0",
-          'id': 3961501155446,
-          'order_name': "#1023",
-          'revenue': "234.32",
-          'shipping': "41.38",
-          'sub_total': "192.94",
-          'tax': "0.0",
+          'affiliation': data.organization,
+          'discount_amount': data.order.prices[2].amount, // in foreign currency. In USD use data.order.prices[2].base.amount,
+          // TODO: Decide whether we want foreign or USD currency. Figure out 'id'
+          'id': '', // If this is the order id that shows in the url in a shopify order it's not in the data object. sample order was 3963211317321,
+          'order_name': data.order['number'], // This is the order number that shows up in Shopify on orders list page,
+          'revenue': data.order.prices[0].amount, // in foreign currency. In USD use data.order.prices[0].base.amount,
+          'shipping': data.order.prices[1].amount, // in foreign currency. In USD use data.order.prices[1].base.amount,
+          'sub_total': data.order.deliveries[0].total.amount, // Subtotal in foreign currency (after discounts but includes shipping and tax, no real subtotal is available, have to calculate) in USD use data.order.deliveries[0].total.base.amount,
+          'tax': data.order.deliveries[0].prices[3].amount, // tax in foreign currency. For USD use data.order.deliveries[0].prices[3].base.amount
         },
         'products': productList
       },
