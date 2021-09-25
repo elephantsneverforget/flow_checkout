@@ -55,8 +55,6 @@ function pushDLBeginCheckout(data) {
   });
 }
 
-
-
 // Fires on shipping method page load (checkout step 2)
 // Triggers dl_add_shipping_info
 flow.checkout.onPageView(flow.checkout.enums.pageView.SHIPPING_METHOD, function handlePageView(data) {
@@ -100,28 +98,47 @@ function pushDLAddShippingInfo(data) {
 }
 
 
-
+// Fires on payment info page load (checkout step 3)
+// Triggers dl_add_payment_info
 flow.checkout.onPageView(flow.checkout.enums.pageView.PAYMENT_INFO, function handlePageView(data) {
-  var items = [];
-  var prices = data.getOrderPrices();
+  pushDLAddPaymentInfo(data);
+});
 
-  data.order.items.forEach((orderItem) => {
-    var contentItem = data.content.getItem(orderItem.number);
+function pushDLAddPaymentInfo(data) {
+  var cookie = getCookie('__gtm_campaign_url');
+  var urlParams = getUrlParams(cookie);
+  var productList = getProductsInCart(data);
 
-    if (contentItem) {
-      items.push({
-        'brand': '@clientNameReplace',
-        'category': contentItem.categories.join(),
-        'id': contentItem.attributes['product_id'],
-        'name': contentItem.name,
-        'price': contentItem.price.amount,
-        'quantity': orderItem.quantity,
-        'variant': contentItem.attributes['colorName-x-default']
-      });
+  window.dataLayer.push({
+    'pageTitle': 'Checkout: Shipping and Billing Address',
+    'pageCategory': 'Checkout',
+    'visitorLoginState': 'flow',
+    'customerEmail': data.order.customer.email,
+    'customerOrders': null,
+    'customerValue': 0,
+    'Country': data.order.destination.country,
+    'State': data.order.destination.province,
+    'event': 'dl_add_payment_info',
+    // TODO: how do we generate this?
+    // 'event_id': pass in from previous page? ,
+    'ecommerce': {
+      'checkout': {
+        'actionField': { step: 3, action: 'checkout'},
+        'products': productList
+      },
+      'currencyCode': data.order.total.base.currency
+    },
+    'marketing': {
+      // TODO: Should we modify the script to set cookie duration?
+      // currently set to session expiration.
+      'utm_campaign': urlParams['utm_campaign'],
+      'utm_content': urlParams['utm_content'],
+      'utm_medium': urlParams['utm_medium'],
+      'utm_source': urlParams['utm_source'],
+      'utm_content': urlParams['utm_content'],
     }
   });
-
-});
+}
 
 // flow.checkout.onPageView(flow.checkout.enums.pageView.CONFIRMATION, function handlePageView(data) {
 flow.checkout.onTransaction(function (data) {
