@@ -25,20 +25,20 @@ function pushDLBeginCheckout(data) {
 
   var productList = getProductsInCart(data);
   window.dataLayer.push({
-    'pageTitle': 'Checkout: Shipping and Billing Address',
-    'pageCategory': 'Checkout',
-    'visitorLoginState': 'flow',
-    'customerEmail': data.order.customer.email,
-    'customerOrders': null,
-    'customerValue': 0,
-    'Country': data.order.destination.country,
-    'State': data.order.destination.province,
+    // 'pageTitle': 'Checkout: Shipping and Billing Address',
+    // 'pageCategory': 'Checkout',
+    // 'visitorLoginState': 'flow',
+    // 'customerEmail': data.order.customer.email,
+    // 'customerOrders': null,
+    // 'customerValue': 0,
+    // 'Country': data.order.destination.country,
+    // 'State': data.order.destination.province,
     'event': 'dl_begin_checkout',
     // TODO: how do we generate this?
     // 'event_id': pass in from previous page? ,
     'ecommerce': {
       'checkout': {
-        'actionField': { step: 1, action: 'checkout'},
+        'actionField': { step: 1, action: 'checkout' },
         'products': productList
       },
       'currencyCode': data.order.total.base.currency
@@ -67,20 +67,20 @@ function pushDLAddShippingInfo(data) {
   var productList = getProductsInCart(data);
 
   window.dataLayer.push({
-    'pageTitle': 'Checkout: Shipping and Billing Address',
-    'pageCategory': 'Checkout',
-    'visitorLoginState': 'flow',
-    'customerEmail': data.order.customer.email,
-    'customerOrders': null,
-    'customerValue': 0,
-    'Country': data.order.destination.country,
-    'State': data.order.destination.province,
+    // 'pageTitle': 'Checkout: Shipping and Billing Address',
+    // 'pageCategory': 'Checkout',
+    // 'visitorLoginState': 'flow',
+    // 'customerEmail': data.order.customer.email,
+    // 'customerOrders': null,
+    // 'customerValue': 0,
+    // 'Country': data.order.destination.country,
+    // 'State': data.order.destination.province,
     'event': 'dl_add_shipping_info',
     // TODO: how do we generate this?
     // 'event_id': pass in from previous page? ,
     'ecommerce': {
       'checkout': {
-        'actionField': { step: 2, action: 'checkout'},
+        'actionField': { step: 2, action: 'checkout' },
         'products': productList
       },
       'currencyCode': data.order.total.base.currency
@@ -110,20 +110,20 @@ function pushDLAddPaymentInfo(data) {
   var productList = getProductsInCart(data);
 
   window.dataLayer.push({
-    'pageTitle': 'Checkout: Shipping and Billing Address',
-    'pageCategory': 'Checkout',
-    'visitorLoginState': 'flow',
-    'customerEmail': data.order.customer.email,
-    'customerOrders': null,
-    'customerValue': 0,
-    'Country': data.order.destination.country,
-    'State': data.order.destination.province,
+    // 'pageTitle': 'Checkout: Shipping and Billing Address',
+    // 'pageCategory': 'Checkout',
+    // 'visitorLoginState': 'flow',
+    // 'customerEmail': data.order.customer.email,
+    // 'customerOrders': null,
+    // 'customerValue': 0,
+    // 'Country': data.order.destination.country,
+    // 'State': data.order.destination.province,
     'event': 'dl_add_payment_info',
     // TODO: how do we generate this?
     // 'event_id': pass in from previous page? ,
     'ecommerce': {
       'checkout': {
-        'actionField': { step: 3, action: 'checkout'},
+        'actionField': { step: 3, action: 'checkout' },
         'products': productList
       },
       'currencyCode': data.order.total.base.currency
@@ -140,65 +140,60 @@ function pushDLAddPaymentInfo(data) {
   });
 }
 
+// Fires once on transaction complete (checkout step 4)
+// Triggers dl_purchase
 // flow.checkout.onPageView(flow.checkout.enums.pageView.CONFIRMATION, function handlePageView(data) {
 flow.checkout.onTransaction(function (data) {
-  var items = [];
-  var prices = data.getOrderPrices();
-
-  dataLayer.push({
-    'event': 'dl_purchase',
-    'ecommerce': {
-      'checkout': undefined
-    }
-  });
-
-  data.order.items.forEach((orderItem) => {
-    var contentItem = data.content.getItem(orderItem.number);
-
-    if (contentItem) {
-      items.push({
-        'brand': '@clientNameReplace',
-        'category': contentItem.categories.join(),
-        'id': contentItem.attributes['product_id'],
-        'name': contentItem.name,
-        'price': contentItem.price.amount,
-        'quantity': orderItem.quantity,
-        'variant': contentItem.attributes['colorName-x-default']
-      });
-    }
-  });
-
-  var dataLayerObj = {
-    'pageTitle': 'Checkout: Order Confirmation',
-    'pageCategory': 'Checkout',
-    'visitorLoginState': 'flow',
-    'customerEmail': data.order.customer.email,
-    'customerOrders': null,
-    'customerValue': 0,
-    'Country': data.order.destination.country,
-    'State': data.order.destination.province,
-    'event': 'flowOrderConfirmation',
-    'ecommerce': {
-      'purchase': {
-        'products': items,
-        'actionField': {
-          'id': data.order.number,
-          'revenue': prices.subtotal ? prices.subtotal.base.amount : -1,
-          'shipping': prices.shipping ? prices.shipping.base.amount : -1,
-          'tax': prices.duty ? prices.duty.base.amount : -1
-        },
-      },
-      'currencyCode': data.order.total.base.currency
-    }
-  };
-
-  dataLayer.push(dataLayerObj);
-
-  dataLayerObj.event = 'transaction';
-
-  dataLayer.push(dataLayerObj);
+  pushDLPurchase(data);
 });
 
+function pushDLPurchase(data) {
+  var cookie = getCookie('__gtm_campaign_url');
+  var urlParams = getUrlParams(cookie);
+  var productList = getProductsInCart(data);
+
+  window.dataLayer.push({
+    // 'pageTitle': 'Checkout: Shipping and Billing Address',
+    // 'pageCategory': 'Checkout',
+    // 'visitorLoginState': 'flow',
+    // 'customerEmail': data.order.customer.email,
+    // 'customerOrders': null,
+    // 'customerValue': 0,
+    // 'Country': data.order.destination.country,
+    // 'State': data.order.destination.province,
+    'event': 'dl_purchase',
+    // TODO: how do we generate this?
+    // 'event_id': pass in from previous page? ,
+    'ecommerce': {
+      'checkout': {
+        'actionField': {
+          'action': "purchase",
+          'affiliation': flowSettings.shopify.entities.shop.myshopify_domain,
+          // TODO: fill these once you have a sample transaction
+          'discount_amount': "0.0",
+          'id': 3961501155446,
+          'order_name': "#1023",
+          'revenue': "234.32",
+          'shipping': "41.38",
+          'sub_total': "192.94",
+          'tax': "0.0",
+        },
+        'products': productList
+      },
+      'currencyCode': data.order.total.base.currency
+    },
+    'marketing': {
+      // TODO: Should we modify the script to set cookie duration?
+      // currently set to session expiration. 
+      // Should this be set to landing_site == something if no utms?
+      'utm_campaign': urlParams['utm_campaign'],
+      'utm_content': urlParams['utm_content'],
+      'utm_medium': urlParams['utm_medium'],
+      'utm_source': urlParams['utm_source'],
+      'utm_content': urlParams['utm_content'],
+    }
+  });
+}
 
 function getProductsInCart(data) {
   var items = [];
