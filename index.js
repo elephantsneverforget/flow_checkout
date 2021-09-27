@@ -26,8 +26,7 @@ function pushDLBeginCheckout(data) {
   var productList = getProductsInCart(data);
   window.dataLayer.push({
     'event': 'dl_begin_checkout',
-    // TODO: how do we generate this? just use a UUID link in the GTM suite script?
-    // 'event_id': 
+    'event_id': generateEventID(), 
     'ecommerce': {
       'checkout': {
         'actionField': { step: 1, action: 'checkout' },
@@ -52,7 +51,7 @@ function pushDLAddShippingInfo(data) {
 
   window.dataLayer.push({
     'event': 'dl_add_shipping_info',
-    // 'event_id': 
+    'event_id': generateEventID(),
     'ecommerce': {
       'checkout': {
         'actionField': { step: 2, action: 'checkout' },
@@ -78,7 +77,7 @@ function pushDLAddPaymentInfo(data) {
 
   window.dataLayer.push({
     'event': 'dl_add_payment_info',
-    // 'event_id': 
+    'event_id': generateEventID(),
     'ecommerce': {
       'checkout': {
         'actionField': { step: 3, action: 'checkout' },
@@ -104,7 +103,7 @@ function pushDLPurchase(data) {
 
   window.dataLayer.push({
     'event': 'dl_purchase',
-    // 'event_id': pass in from previous page? ,
+    'event_id': generateEventID(),
     'ecommerce': {
       'purchase': {
         'actionField': {
@@ -169,6 +168,11 @@ function getCookie(name) {
   const value = `; ${document.cookie}`;
   const parts = value.split(`; ${name}=`);
   if (parts.length === 2) return decodeURIComponent(parts.pop().split(';').shift());
+}
+
+// Sufficient according to Thomas
+function generateEventID() {
+  return Math.random().toString(36).slice(2)
 }
 
 // Returns marketing params
