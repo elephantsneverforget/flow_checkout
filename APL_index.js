@@ -1,4 +1,3 @@
-// Sample script from site
 // https://docs.flow.io/docs/use-events-and-analytics
 
 (function (w, d, s, l, i) {
