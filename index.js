@@ -34,7 +34,7 @@ function pushDLBeginCheckout(data) {
       },
       'currencyCode': data.order.total.base.currency
     },
-    'marketing' : getMarketingData(urlParams, data),
+    // 'marketing' : getMarketingData(urlParams, data),
   });
 }
 
@@ -59,7 +59,7 @@ function pushDLAddShippingInfo(data) {
       },
       'currencyCode': data.order.total.base.currency
     },
-    'marketing' : getMarketingData(urlParams, data),
+    // 'marketing' : getMarketingData(urlParams, data),
   });
 }
 
@@ -85,7 +85,7 @@ function pushDLAddPaymentInfo(data) {
       },
       'currencyCode': data.order.total.base.currency
     },
-    'marketing' : getMarketingData(urlParams, data),
+    // 'marketing' : getMarketingData(urlParams, data),
   });
 }
 
@@ -122,7 +122,7 @@ function pushDLPurchase(data) {
       },
       'currencyCode': data.order.total.currency // USD data.order.total.base.currency
     },
-    'marketing' : getMarketingData(urlParams, data),
+    // 'marketing' : getMarketingData(urlParams, data),
   });
 }
 
@@ -176,16 +176,16 @@ function generateEventID() {
 }
 
 // Returns marketing params
-function getMarketingData(urlParams, data) {
-  return {
-    // TODO: Should we modify the script to set cookie duration?
-    // currently set to session expiration.
-    // What if we have no utms? i've seen landing page: '/' here previously.
-    // Should I set that if no UTMS?
-    'utm_campaign': urlParams['utm_campaign'],
-    'utm_content': urlParams['utm_content'],
-    'utm_medium': urlParams['utm_medium'],
-    'utm_source': urlParams['utm_source'],
-    'utm_content': urlParams['utm_content'],
-  }
-}
+// function getMarketingData(urlParams, data) {
+//   return {
+//     // TODO: Should we modify the script to set cookie duration?
+//     // currently set to session expiration.
+//     // What if we have no utms? i've seen landing page: '/' here previously.
+//     // Should I set that if no UTMS?
+//     'utm_campaign': urlParams['utm_campaign'],
+//     'utm_content': urlParams['utm_content'],
+//     'utm_medium': urlParams['utm_medium'],
+//     'utm_source': urlParams['utm_source'],
+//     'utm_content': urlParams['utm_content'],
+//   }
+// }
