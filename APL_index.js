@@ -25,7 +25,7 @@ function pushDLBeginCheckout(data) {
   var productList = getProductsInCart(data);
   window.dataLayer.push({
     'event': 'dl_begin_checkout',
-    'event_id': generateEventID(), 
+    'event_id': generateEventID(),
     'ecommerce': {
       'checkout': {
         'actionField': { step: 1, action: 'checkout' },
@@ -103,6 +103,7 @@ function pushDLPurchase(data) {
   window.dataLayer.push({
     'event': 'dl_purchase',
     'event_id': generateEventID(),
+    'user_properties':getUserProperties(),
     'ecommerce': {
       'purchase': {
         'actionField': {
@@ -110,7 +111,7 @@ function pushDLPurchase(data) {
           'affiliation': data.organization,
           'discount_amount': data.order.prices[2].amount, // in foreign currency. In USD use data.order.prices[2].base.amount,
           // TODO: Decide whether we want foreign or USD currency. Figure out 'id'
-          'id': '', // If this is the order id that shows in the url in a shopify order it's not in the data object.
+          'id': data.order['number'], // If this is the order id that shows in the url in a shopify order it's not in the data object.
           'order_name': data.order['number'], // This is the order number that shows up in Shopify on orders list page,
           'revenue': data.order.prices[0].amount, // in foreign currency. In USD use data.order.prices[0].base.amount,
           'shipping': data.order.prices[1].amount, // in foreign currency. In USD use data.order.prices[1].base.amount,
@@ -160,6 +161,23 @@ function getUrlParams(address) {
     vars[key] = value;
   });
   return vars;
+}
+
+// Returns a user properties object
+function getUserProperties(data) {
+  return {
+    // 'customer_id': not available
+    'customer_email': data.order.customer.email,
+    'customer_first_name': data.order.customer.name.first,
+    'customer_phone': data.order.customer.phone,
+    'customer_last_name': data.order.customer.name.last,
+    'customer_city': data.order.destination.city,
+    'customer_zip': data.order.destination.postal,
+    'customer_address_1': data.order.destination.streets[0],
+    'customer_address_2': data.order.destination.streets[1],
+    'customer_country': data.order.destination.country,
+    'customer_province': data.order.destination.province,
+  }
 }
 
 // Returns the named cookie from the document.cookie string
