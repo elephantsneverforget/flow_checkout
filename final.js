@@ -12,7 +12,6 @@ function setListeners() {
         pushDLBeginCheckout(data);
     });
 
-
     function pushDLBeginCheckout(data) {
         console.log("Begin checkout")
         var cookie = getCookie('__gtm_campaign_url');
@@ -32,7 +31,6 @@ function setListeners() {
                 // COMMENT OUT TO USE FOREIGN CURRENCY
                 'currencyCode': data.order.total.base.currency
             },
-            // 'marketing' : getMarketingData(urlParams, data),
         });
     }
 
@@ -59,10 +57,8 @@ function setListeners() {
                 // COMMENT OUT TO USE FOREIGN CURRENCY
                 'currencyCode': data.order.total.base.currency
             },
-            // 'marketing' : getMarketingData(urlParams, data),
         });
     }
-
 
     // Fires on payment info page load (checkout step 3)
     flow.checkout.onPageView(flow.checkout.enums.pageView.PAYMENT_INFO, function handlePageView(data) {
@@ -87,10 +83,8 @@ function setListeners() {
                 // COMMENT OUT TO USE FOREIGN CURRENCY
                 'currencyCode': data.order.total.base.currency
             },
-            // 'marketing' : getMarketingData(urlParams, data),
         });
     }
-
 
     // Fires once on transaction complete (checkout step 4)
     flow.checkout.onTransaction(function (data) {
@@ -135,7 +129,6 @@ function setListeners() {
                 // COMMENT OUT TO USE FOREIGN CURRENCY
                 'currencyCode': data.order.total.base.currency
             },
-            // 'marketing' : getMarketingData(urlParams, data),
         });
     }
 
@@ -149,14 +142,17 @@ function setListeners() {
                 // This is section is functional and semi tested in the browser
                 items.push({
                     'brand': contentItem.attributes['vendor'],
-                    // // TODO: This is messy. Last item in array seems to be the top level category. 
+                    // This is messy. Last item in array seems to be the top level category. 
                     'category': contentItem.categories[contentItem.categories.length - 1],
                     'id': contentItem.attributes['sku'],
                     'image': contentItem.images[0]['url'],
-                    //Should be something like "/shoes/running" We don't have the collection name in this object
+                    // Should be something like "/shoes/running" We don't have the collection name in this object
                     'name': contentItem.name,
-                    // TODO: Price in checkout currency? Currently USD price. 
+                    // Price in checkout currency? Currently USD price. 
+                    // COMMENT OUT TO USE FOREIGN CURRENCY
                     'price': contentItem.price.amount,
+                    // UNCOMMENT TO USE FOREIGN CURRENCY 
+                    // 'price': contentItem.local.prices[0].amount,
                     'product_id': contentItem.attributes['product_id'],
                     'quantity': orderItem.quantity,
                     'variant': contentItem.attributes['variant_title'],
@@ -206,19 +202,4 @@ function setListeners() {
     }
 
 }
-// Returns marketing params
-// Not necessary according to Thomas
-// function getMarketingData(urlParams, data) {
-//   return {
-//     // TODO: Should we modify the script to set cookie duration?
-//     // currently set to session expiration.
-//     // What if we have no utms? i've seen landing page: '/' here previously.
-//     // Should I set that if no UTMS?
-//     'utm_campaign': urlParams['utm_campaign'],
-//     'utm_content': urlParams['utm_content'],
-//     'utm_medium': urlParams['utm_medium'],
-//     'utm_source': urlParams['utm_source'],
-//     'utm_content': urlParams['utm_content'],
-//   }
-// }
 //# sourceURL=flow-checkout-tracking.js

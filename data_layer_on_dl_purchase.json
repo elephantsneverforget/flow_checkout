@@ -1,0 +1,115 @@
+{
+  event: "dl_purchase",
+  gtm: {
+    uniqueEventId: 1113,
+    start: 1633268492730,
+    timerId: 91,
+    timerEventNumber: 2,
+    timerInterval: 1000,
+    timerLimit: 10,
+    timerStartTime: 1633268495467,
+    timerCurrentTime: 1633268497506,
+    timerElapsedTime: 2039,
+    triggers: "13119181_254"
+  },
+  event_id: "3djsgf9gso2",
+  cart_total: "325.0",
+  user_properties: {
+    visitor_type: "guest",
+    user_consent: "",
+    customer_email: "jonathan@getelevar.com",
+    customer_first_name: "Jonathan",
+    customer_phone: "7809510883",
+    customer_last_name: "Cairo",
+    customer_city: "Edmonton",
+    customer_zip: "T5E6V4",
+    customer_address_1: "1 - 2560 Pegasus Boulevard NW",
+    customer_country: "CAN",
+    customer_province: "Alberta"
+  },
+  ecommerce: {
+    cart_contents: {
+      products: [
+        {
+          id: "840222803085",
+          name: "Women's Lusso Slide Neon Peach",
+          brand: "Athletic Propulsion Labs",
+          category: "FOOTWEAR - WOMEN'S",
+          variant: "NEON PEACH / 9",
+          price: "175",
+          quantity: "1",
+          list: "/search",
+          product_id: "6562278047817",
+          variant_id: "39286659776585",
+          image: "https://cdn.shopify.com/s/files/1/0008/8116/4339/pr" +
+                 "oducts/lussoslide-neonpeach-5.jpg?v=1622666215"
+        },
+        {
+          id: "840222810113",
+          name: "Men's Iconic Slide Deep Brown / White / Cow",
+          brand: "Athletic Propulsion Labs",
+          category: "FOOTWEAR - MEN'S",
+          variant: "DEEP BROWN / WHITE / COW / 9",
+          price: "150",
+          quantity: "1",
+          list: "/search",
+          product_id: "6562263629897",
+          variant_id: "39286585131081",
+          image: "https://cdn.shopify.com/s/files/1/0008/8116/4339/pr" +
+                 "oducts/iconicslide-deepbrown-white-cow-5_ba97d062-7" +
+                 "df5-4d44-b52c-23587fc09369.jpg?v=1622664801"
+        }
+      ]
+    },
+    purchase: {
+      actionField: {
+        action: "purchase",
+        affiliation: "apl",
+        id: "F474417",
+        order_name: "F474417",
+        discount_amount: -308.78,
+        revenue: 325.04,
+        shipping: 21.05,
+        sub_total: 38.12,
+        tax: 0.81
+      },
+      products: [
+        {
+          brand: "Athletic Propulsion Labs",
+          category: "FOOTWEAR - MEN'S",
+          id: "840222810113",
+          image: "https://cdn.shopify.com/s/files/1/0008/8116/4339/pr" +
+                 "oducts/iconicslide-deepbrown-white-cow-5_ba97d062-7" +
+                 "df5-4d44-b52c-23587fc09369.jpg?v=1622664801",
+          name: "Men's Iconic Slide Deep Brown / White / Cow - DEEP B" +
+                "ROWN / WHITE / COW / 9",
+          price: 150,
+          product_id: "6562263629897",
+          quantity: 1,
+          variant: "DEEP BROWN / WHITE / COW / 9",
+          variant_id: "39286585131081"
+        },
+        {
+          brand: "Athletic Propulsion Labs",
+          category: "FOOTWEAR - WOMEN'S",
+          id: "840222803085",
+          image: "https://cdn.shopify.com/s/files/1/0008/8116/4339/pr" +
+                 "oducts/lussoslide-neonpeach-5.jpg?v=1622666215",
+          name: "Women's Lusso Slide Neon Peach - NEON PEACH / 9",
+          price: 175,
+          product_id: "6562278047817",
+          quantity: 1,
+          variant: "NEON PEACH / 9",
+          variant_id: "39286659776585"
+        }
+      ]
+    },
+    currencyCode: "USD"
+  },
+  marketing: {
+    gclid: "CjwKCAjw-sqKBhBjEiwAVaQ9a_unMpWZ4g1Gb9YvQBlZUjWSsNGLk9VIH" +
+           "PuU-l-YKp8UW7xfizsczxoCPZAQAvD_BwE"
+  },
+  timestamp: null,
+  status: "non_gdpr"
+}
