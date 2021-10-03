@@ -14,10 +14,6 @@ function setListeners() {
     });
 
     function pushDLBeginCheckout(data) {
-        console.log("Begin checkout")
-        var cookie = getCookie('__gtm_campaign_url');
-        var urlParams = getUrlParams(cookie);
-
         var productList = getProductsInCart(data);
         window.dataLayer.push({
             'event': 'dl_begin_checkout',
@@ -41,10 +37,7 @@ function setListeners() {
     });
 
     function pushDLAddShippingInfo(data) {
-        var cookie = getCookie('__gtm_campaign_url');
-        var urlParams = getUrlParams(cookie);
         var productList = getProductsInCart(data);
-
         window.dataLayer.push({
             'event': 'dl_add_shipping_info',
             'event_id': generateEventID(),
@@ -67,10 +60,7 @@ function setListeners() {
     });
 
     function pushDLAddPaymentInfo(data) {
-        var cookie = getCookie('__gtm_campaign_url');
-        var urlParams = getUrlParams(cookie);
         var productList = getProductsInCart(data);
-
         window.dataLayer.push({
             'event': 'dl_add_payment_info',
             'event_id': generateEventID(),
@@ -93,10 +83,7 @@ function setListeners() {
     });
 
     function pushDLPurchase(data) {
-        var cookie = getCookie('__gtm_campaign_url');
-        var urlParams = getUrlParams(cookie);
         var productList = getProductsInCart(data);
-
         window.dataLayer.push({
             'event': 'dl_purchase',
             'event_id': generateEventID(),
@@ -164,15 +151,6 @@ function setListeners() {
         return items;
     }
 
-    // Returns an object with key/values matching the url params
-    function getUrlParams(address) {
-        var vars = {};
-        var parts = address.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
-            vars[key] = value;
-        });
-        return vars;
-    }
-
     // Returns a user properties object
     function getUserProperties(data) {
         return {
@@ -190,18 +168,10 @@ function setListeners() {
         }
     }
 
-    // Returns the named cookie from the document.cookie string
-    function getCookie(name) {
-        const value = `; ${document.cookie}`;
-        const parts = value.split(`; ${name}=`);
-        if (parts.length === 2) return decodeURIComponent(parts.pop().split(';').shift());
-    }
-
     // Sufficient according to Thomas
     function generateEventID() {
         return Math.random().toString(36).slice(2)
     }
-
 }
 //# sourceURL=flow-checkout-tracking.js
 // Shows under sources, no domain, flow-checkout-tracking.js
