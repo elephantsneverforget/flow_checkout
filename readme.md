@@ -2,7 +2,7 @@
 
 Flow is an international checkout. Integrating our data layer is easy!
 
-1. Create a snippet in the clients theme called 'flow-checkout-tracking.liquid'
+1. Create a snippet in the clients theme called `flow-checkout-tracking.liquid`
 
 2. Copy and paste the contents of flow-checkout-tracking.js, find it [here](https://github.com/elephantsneverforget/flow_checkout/blob/main/flow-checkout-tracking.js), into the snippet file you just created.
 
