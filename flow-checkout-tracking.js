@@ -1,4 +1,3 @@
-<script>
 // Defaults to using the base currency of the store
 // If you'd like reporting in foreign currency flip this
 // variable to false
@@ -28,7 +27,7 @@ function setListeners() {
                     'actionField': { step: 1, action: 'checkout' },
                     'products': productList
                 },
-                'currencyCode': USE_BASE_CURRENCY ? data.order.total.base.currency : data.order.total.currency,
+                'currencyCode': getCurrency(data),
             },
         });
     }
@@ -48,7 +47,7 @@ function setListeners() {
                     'actionField': { step: 2, action: 'checkout' },
                     'products': productList
                 },
-                'currencyCode': USE_BASE_CURRENCY ? data.order.total.base.currency : data.order.total.currency,
+                'currencyCode': getCurrency(data),
             },
         });
     }
@@ -68,7 +67,7 @@ function setListeners() {
                     'actionField': { step: 3, action: 'checkout' },
                     'products': productList
                 },
-                'currencyCode': USE_BASE_CURRENCY ? data.order.total.base.currency : data.order.total.currency,
+                'currencyCode': getCurrency(data),
             },
         });
     }
@@ -92,15 +91,15 @@ function setListeners() {
                         'id': data.order['number'],
                         // This is the order number that shows up in Shopify on the orders list page,
                         'order_name': data.order['number'],
-                        'discount_amount': USE_BASE_CURRENCY ? data.order.prices[2].base.amount : data.order.prices[2].amount,
-                        'revenue': USE_BASE_CURRENCY ? data.order.prices[0].base.amount : data.order.prices[0].amount,
-                        'shipping': USE_BASE_CURRENCY ? data.order.prices[1].base.amount : data.order.prices[1].amount,
+                        'discount_amount': -getValue('discount', data),
+                        'revenue': USE_BASE_CURRENCY ? data.order.total.base.amount : data.order.total.amount,
+                        'shipping': getValue('shipping', data),
                         'sub_total': getSubtotal(data),
-                        'tax': USE_BASE_CURRENCY ? data.order.deliveries[0].prices[3].base.amount : data.order.deliveries[0].prices[3].amount,
+                        'tax': getValue('vat', data) + getValue('duty', data),
                     },
                     'products': productList
                 },
-                'currencyCode': USE_BASE_CURRENCY ? data.order.total.base.currency : data.order.total.currency,
+                'currencyCode': getCurrency(data),
             },
         });
     }
@@ -119,13 +118,9 @@ function setListeners() {
                     'category': contentItem.categories[contentItem.categories.length - 1],
                     'id': contentItem.attributes['sku'],
                     'image': contentItem.images[0]['url'],
-                    // Should be something like "/shoes/running" We don't have the collection name in this object
+                    // Should be something like "/shoes/running" We don't have a proper collection name in this object
                     'name': contentItem.name,
-                    // Price in checkout currency? Currently USD price. 
-                    // COMMENT OUT TO USE FOREIGN CURRENCY
-                    'price': contentItem.price.amount,
-                    // UNCOMMENT TO USE FOREIGN CURRENCY 
-                    // 'price': contentItem.local.prices[0].amount,
+                    'price': USE_BASE_CURRENCY ? contentItem.price.amount : contentItem.local.prices[0].amount,
                     'product_id': contentItem.attributes['product_id'],
                     'quantity': orderItem.quantity,
                     'variant': contentItem.attributes['variant_title'],
@@ -158,18 +153,30 @@ function setListeners() {
         return Math.random().toString(36).slice(2)
     }
 
-    // Flow doesn't calculate a proper subtotal
+    function getCurrency(data) {
+        return USE_BASE_CURRENCY ? data.order.total.base.currency : data.order.total.currency; 
+    }
+
+    function getRevenue(data) {
+        return getValue()
+    }
+
     function getSubtotal(data) {
         // total excludes tax/discounts/shipping. Full price of products.
-        var total = USE_BASE_CURRENCY ? data.order.prices[0].base.amount : data.order.prices[0];
-        var discount = USE_BASE_CURRENCY ? data.order.prices[2].base.amount : data.order.prices[2].amount;
-        // var shipping = USE_BASE_CURRENCY ? data.order.prices[1].base.amount : data.order.prices[1].amount;
-        // var tax = USE_BASE_CURRENCY ? data.order.prices[3].base.amount : data.order.prices[3].amount;
-        // 498.90 + (-473.95) 
-        // 380.07 + (-361.07)
-        return total + discount;
+        return getValue('subtotal', data) + getValue('discount', data);
     }
+    
+    function getValue(valueKey, data) {
+        var obj = data.order.prices.find(function (item) { return item.key === valueKey });
+        var value;
+        if (obj) {
+            value = USE_BASE_CURRENCY ? obj.base.amount : obj.amount;
+        } else {
+            value = 0;
+        }
+        return value;
+    }
+    
 }
 //# sourceURL=flow-checkout-tracking.js
 // Shows under sources, no domain, flow-checkout-tracking.js
-</script>
