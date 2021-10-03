@@ -158,10 +158,6 @@ function setListeners() {
         return USE_BASE_CURRENCY ? data.order.total.base.currency : data.order.total.currency; 
     }
 
-    function getRevenue(data) {
-        return getValue()
-    }
-
     function getSubtotal(data) {
         // total excludes tax/discounts/shipping. Full price of products.
         return getValue('subtotal', data) + getValue('discount', data);
