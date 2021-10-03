@@ -1,14 +1,13 @@
-
+// Wait for script to load before attaching listeners. 2 parts. Does not fire load event
 var interval = setInterval(function () {
-    if (typeof flow !== 'undefined') {
+    if (typeof window.flow.checkout !== 'undefined') {
         clearInterval(interval)
         setListeners();
     }
-}, 500)
+}, 250)
 
 function setListeners() {
     // Fires on contact info page load (checkout step 1)
-    // Triggers dl_begin_checkout
     flow.checkout.onPageView(flow.checkout.enums.pageView.CONTACT_INFO, function handlePageView(data) {
         pushDLBeginCheckout(data);
     });
@@ -28,6 +27,9 @@ function setListeners() {
                     'actionField': { step: 1, action: 'checkout' },
                     'products': productList
                 },
+                // UNCOMMENT TO USE FOREIGN CURRENCY
+                // 'currencyCode': data.order.total.currency, 
+                // COMMENT OUT TO USE FOREIGN CURRENCY
                 'currencyCode': data.order.total.base.currency
             },
             // 'marketing' : getMarketingData(urlParams, data),
@@ -35,7 +37,6 @@ function setListeners() {
     }
 
     // Fires on shipping method page load (checkout step 2)
-    // Triggers dl_add_shipping_info
     flow.checkout.onPageView(flow.checkout.enums.pageView.SHIPPING_METHOD, function handlePageView(data) {
         pushDLAddShippingInfo(data);
     });
@@ -53,6 +54,9 @@ function setListeners() {
                     'actionField': { step: 2, action: 'checkout' },
                     'products': productList
                 },
+                // UNCOMMENT TO USE FOREIGN CURRENCY
+                // 'currencyCode': data.order.total.currency, 
+                // COMMENT OUT TO USE FOREIGN CURRENCY
                 'currencyCode': data.order.total.base.currency
             },
             // 'marketing' : getMarketingData(urlParams, data),
@@ -61,7 +65,6 @@ function setListeners() {
 
 
     // Fires on payment info page load (checkout step 3)
-    // Triggers dl_add_payment_info
     flow.checkout.onPageView(flow.checkout.enums.pageView.PAYMENT_INFO, function handlePageView(data) {
         pushDLAddPaymentInfo(data);
     });
@@ -79,15 +82,17 @@ function setListeners() {
                     'actionField': { step: 3, action: 'checkout' },
                     'products': productList
                 },
+                // UNCOMMENT TO USE FOREIGN CURRENCY
+                // 'currencyCode': data.order.total.currency, 
+                // COMMENT OUT TO USE FOREIGN CURRENCY
                 'currencyCode': data.order.total.base.currency
             },
             // 'marketing' : getMarketingData(urlParams, data),
         });
     }
 
+
     // Fires once on transaction complete (checkout step 4)
-    // Triggers dl_purchase
-    // flow.checkout.onPageView(flow.checkout.enums.pageView.CONFIRMATION, function handlePageView(data) {
     flow.checkout.onTransaction(function (data) {
         pushDLPurchase(data);
     });
@@ -100,24 +105,35 @@ function setListeners() {
         window.dataLayer.push({
             'event': 'dl_purchase',
             'event_id': generateEventID(),
-            'user_properties': getUserProperties(),
+            'user_properties': getUserProperties(data),
             'ecommerce': {
                 'purchase': {
                     'actionField': {
                         'action': "purchase",
                         'affiliation': data.organization,
-                        'discount_amount': data.order.prices[2].amount, // in foreign currency. In USD use data.order.prices[2].base.amount,
-                        // TODO: Decide whether we want foreign or USD currency. Figure out 'id'
-                        'id': data.order['number'], // If this is the order id that shows in the url in a shopify order it's not in the data object.
-                        'order_name': data.order['number'], // This is the order number that shows up in Shopify on orders list page,
-                        'revenue': data.order.prices[0].amount, // in foreign currency. In USD use data.order.prices[0].base.amount,
-                        'shipping': data.order.prices[1].amount, // in foreign currency. In USD use data.order.prices[1].base.amount,
-                        'sub_total': data.order.deliveries[0].total.amount, // Subtotal in foreign currency (after discounts but includes shipping and tax, no real subtotal is available, have to calculate) in USD use data.order.deliveries[0].total.base.amount,
-                        'tax': data.order.deliveries[0].prices[3].amount, // tax in foreign currency. For USD use data.order.deliveries[0].prices[3].base.amount
+                        'id': data.order['number'],
+                        // This is the order number that shows up in Shopify on the orders list page,
+                        'order_name': data.order['number'],
+                        // USES BASE CURRENCY BY DEFAULT
+                        // COMMENT OUT TO USE BASE CURRENCY
+                        // 'discount_amount': data.order.prices[2].amount, 
+                        // 'revenue': data.order.prices[0].amount, 
+                        // 'shipping': data.order.prices[1].amount, 
+                        // 'sub_total': data.order.deliveries[0].total.amount, 
+                        // 'tax': data.order.deliveries[0].prices[3].amount, 
+                        // UNCOMMENT TO USE BASE CURRENCY
+                        'discount_amount': data.order.prices[2].base.amount,
+                        'revenue': data.order.prices[0].base.amount,
+                        'shipping': data.order.prices[1].base.amount,
+                        'sub_total': data.order.deliveries[0].total.base.amount,
+                        'tax': data.order.deliveries[0].prices[3].base.amount,
                     },
                     'products': productList
                 },
-                'currencyCode': data.order.total.currency // USD data.order.total.base.currency
+                // UNCOMMENT TO USE FOREIGN CURRENCY
+                // 'currencyCode': data.order.total.currency, 
+                // COMMENT OUT TO USE FOREIGN CURRENCY
+                'currencyCode': data.order.total.base.currency
             },
             // 'marketing' : getMarketingData(urlParams, data),
         });
@@ -137,9 +153,9 @@ function setListeners() {
                     'category': contentItem.categories[contentItem.categories.length - 1],
                     'id': contentItem.attributes['sku'],
                     'image': contentItem.images[0]['url'],
-                    // TODO: 'list' : should be something like "/shoes/running" Not sure we have the collection name in this object
+                    //Should be something like "/shoes/running" We don't have the collection name in this object
                     'name': contentItem.name,
-                    // TODO: Price in checkout currency? Currently USD price. Not
+                    // TODO: Price in checkout currency? Currently USD price. 
                     'price': contentItem.price.amount,
                     'product_id': contentItem.attributes['product_id'],
                     'quantity': orderItem.quantity,
@@ -191,6 +207,7 @@ function setListeners() {
 
 }
 // Returns marketing params
+// Not necessary according to Thomas
 // function getMarketingData(urlParams, data) {
 //   return {
 //     // TODO: Should we modify the script to set cookie duration?
