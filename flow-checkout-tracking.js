@@ -1,4 +1,5 @@
-// Wait for script to load before attaching listeners. 2 parts. Does not fire load event
+<script>
+// Wait for script to load before attaching listeners. 2 parts. Flow does not fire load event for .checkout
 var interval = setInterval(function () {
     if (typeof window.flow.checkout !== 'undefined') {
         clearInterval(interval)
@@ -203,3 +204,4 @@ function setListeners() {
 
 }
 //# sourceURL=flow-checkout-tracking.js
+</script>
