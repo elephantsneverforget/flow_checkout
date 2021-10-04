@@ -10,4 +10,4 @@ Flow is an international checkout. Integrating our data layer is easy!
 
 4. By default we send price data in the default currency (likely USD). If you'd like to change this set the `USE_BASE_CURRENCY` variable at the top of the file to false and you'll get price data in the currency the checkout occurs in.
 
-5. That's it! Get the Flow Checkout running, usually by selecting a flag that isn't US, and check to see you get dl_begin_purchase, dl_add_shipping_info, and dl_add_payment_info. If you do, it's been installed correctly. Run a test purchase and make sure you get the dl_purchase event.
+5. That's it! Get Flow Checkout running, usually by selecting a flag that isn't US, and check to see you get dl_begin_purchase, dl_add_shipping_info, and dl_add_payment_info. If you do, it's been installed correctly. Run a test purchase and make sure you get the dl_purchase event.
