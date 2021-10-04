@@ -1,6 +1,6 @@
 # 🌊 Flow Checkout Data Layer Script
 
-Flow is an international checkout. Integrating our data layer is easy!!
+Flow is an international checkout. Integrating our data layer is easy!
 
 1. Create a snippet in the clients theme called `flow-checkout-tracking.liquid`
 
