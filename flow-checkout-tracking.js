@@ -1,6 +1,7 @@
 // Defaults to using the base currency of the store
 // If you'd like reporting in foreign currency flip this
-// variable to false
+// variable to false but be careful, as it stands blaze checkout
+// steps only come in the stores base currency.
 var USE_BASE_CURRENCY = true;
 
 // Wait for script to load before attaching listeners. 2 parts. Flow does not fire load event for .checkout
@@ -13,31 +14,30 @@ var interval = setInterval(function () {
 
 // New Flow Blaze events
 Flow.set('on', 'loaded', function () {
-  // handle cart updated event
-  Flow.on('blaze.checkoutProgress', function(data){ 
-    console.log(data.step);
-    var productsInCart= getProductsInCartBlazeCheckout(data)
-    switch(data.step) {
-        case 'customer_info':
-            console.log('customer info');
-            pushDLBeginCheckout(data, productsInCart, true);
-        case 'delivery':
-            console.log('delivery');
-            pushDLAddShippingInfo(data, productsInCart, true);
-        case 'payment':
-            console.log('payment')
-            pushDLAddPaymentInfo(data, productsInCart, true);
-        default:
-            console.error('None of the expected checkout steps were provided.')
-    }
-    console.log(data);
-  })
-  Flow.on('blaze.exitCheckout', function(data){
-    console.log('Exit')
-  })
-  Flow.on('blaze.checkoutComplete', function(data){
-    console.log('Checkout complete')
-  })
+    // handle cart updated event
+    Flow.on('blaze.checkoutProgress', function (data) {
+        console.log(data.step);
+        var productsInCart = getProductsInCartBlazeCheckout(data)
+        switch (data.step) {
+            case 'customer_info':
+                console.log('customer info');
+                pushDLBeginCheckout(data, productsInCart, true);
+            case 'delivery':
+                console.log('delivery');
+                pushDLAddShippingInfo(data, productsInCart, true);
+            case 'payment':
+                console.log('payment')
+                pushDLAddPaymentInfo(data, productsInCart, true);
+            default:
+                console.error('None of the expected checkout steps were provided.')
+        }
+        console.log(data);
+    })
+    // Although the docs state this event fires on purchase it doesn't.
+    // The same purchase event can be used on both legacy and Blaze versions of the checkout.
+    // Flow.on('blaze.checkoutComplete', function(data){
+    //     console.log('Checkout complete')
+    // })
 });
 
 // Legacy Flow events (still in use as of Oct 2021)
@@ -217,7 +217,7 @@ function generateEventID() {
 }
 
 function getCurrency(data) {
-    return USE_BASE_CURRENCY ? data.order.total.base.currency : data.order.total.currency; 
+    return USE_BASE_CURRENCY ? data.order.total.base.currency : data.order.total.currency;
 }
 
 function getSubtotal(data) {

@@ -1,0 +1,1425 @@
+{
+    "experiment": {
+        "key": "global_blaze-rollout-2",
+        "variant": {
+            "key": "eyJmZWF0dXJlIjp7ImlkIjoiZmVhLTNlZGYwNWJkNjNiNzQ0Njc5YmU5ZjI0NjhkNzA0OGQwIiwia2V5IjoiZ2xvYmFsX2NoZWNrb3V0X2JsYXplIn0sInZhbHVlIjpmYWxzZSwiZGlzY3JpbWluYXRvciI6ImJvb2xlYW4ifQ",
+            "name": "Blaze checkout enabled: false"
+        }
+    },
+    "organization": "apl",
+    "order": {
+        "id": "ord-1d930ca90d964588b11b5f472cdcb5ec",
+        "number": "F475915",
+        "order_type": "standard",
+        "customer": {
+            "name": {
+                "first": "Jonathan",
+                "last": "Cairo"
+            },
+            "phone": "7809510883",
+            "email": "joncairo@gmail.com",
+            "address": {
+                "name": {
+                    "first": "Jonathan",
+                    "last": "Cairo"
+                },
+                "streets": [
+                    "1 - 2560 Pegasus Boulevard  NW"
+                ],
+                "city": "181282",
+                "province": "Alberta",
+                "postal": "T5E6V4",
+                "country": "CAN"
+            }
+        },
+        "delivered_duty": "paid",
+        "destination": {
+            "streets": [
+                "1 - 2560 Pegasus Boulevard  NW"
+            ],
+            "city": "181282",
+            "province": "Alberta",
+            "postal": "T5E6V4",
+            "country": "CAN",
+            "contact": {
+                "name": {
+                    "first": "Jonathan",
+                    "last": "Cairo"
+                },
+                "phone": "7809510883"
+            }
+        },
+        "expires_at": "2021-10-05T17:56:46.492Z",
+        "items": [
+            {
+                "number": "39286585131081",
+                "name": "Men's Iconic Slide Deep Brown / White / Cow - DEEP BROWN / WHITE / COW / 9",
+                "quantity": 1,
+                "local": {
+                    "experience": {
+                        "id": "exp-f0bad7b182b24e0d96d1f23ac55b08c4",
+                        "key": "canada",
+                        "name": "Canada"
+                    },
+                    "prices": [
+                        {
+                            "currency": "CAD",
+                            "amount": 195.95,
+                            "label": "CA$195.95",
+                            "base": {
+                                "amount": 149.63,
+                                "currency": "USD",
+                                "label": "US$149.63"
+                            },
+                            "includes": {
+                                "key": "none",
+                                "label": "GST and duty not included"
+                            },
+                            "key": "localized_item_price"
+                        },
+                        {
+                            "currency": "CAD",
+                            "amount": 11.57,
+                            "label": "CA$11.57",
+                            "base": {
+                                "amount": 8.83,
+                                "currency": "USD",
+                                "label": "US$8.83"
+                            },
+                            "name": "GST",
+                            "accuracy": "calculated",
+                            "key": "localized_item_vat"
+                        },
+                        {
+                            "currency": "CAD",
+                            "amount": 35.27,
+                            "label": "CA$35.27",
+                            "base": {
+                                "amount": 26.93,
+                                "currency": "USD",
+                                "label": "US$26.93"
+                            },
+                            "key": "localized_item_duty"
+                        }
+                    ],
+                    "rates": [],
+                    "spot_rates": [],
+                    "status": "included",
+                    "attributes": {
+                        "weight": "1.77",
+                        "display_variant_title": "DEEP BROWN / WHITE / COW / 9",
+                        "url": "https://www.athleticpropulsionlabs.com/products/mens-iconic-slide-deep-brown-white-cow?variant=39286585131081",
+                        "option1": "DEEP BROWN / WHITE / COW",
+                        "weight_unit": "lb",
+                        "product_handle": "mens-iconic-slide-deep-brown-white-cow",
+                        "product_type": "FOOTWEAR - MEN'S",
+                        "fulfillment_service": "manual",
+                        "taxable": "true",
+                        "product_id": "6562263629897",
+                        "option2": "9",
+                        "vendor": "Athletic Propulsion Labs",
+                        "inventory_policy": "deny",
+                        "sku": "840222810113",
+                        "source": "shopify",
+                        "barcode": "840222810113",
+                        "inventory_management": "shopify",
+                        "product_title": "Men's Iconic Slide Deep Brown / White / Cow",
+                        "requires_shipping": "true",
+                        "variant_title": "DEEP BROWN / WHITE / COW / 9",
+                        "grams": "803.0",
+                        "fulfillment_method": "physical"
+                    },
+                    "price_attributes": {}
+                },
+                "id": "lin-de5dbf7cbf0f46efaa2d5fa2b0385ed7",
+                "discounts": [
+                    {
+                        "amount": -186.15,
+                        "currency": "CAD",
+                        "label": "-CA$186.15",
+                        "base": {
+                            "amount": -142.15,
+                            "currency": "USD",
+                            "label": "-US$142.15"
+                        },
+                        "requested": {
+                            "amount": 186.15,
+                            "currency": "CAD"
+                        },
+                        "discount_label": "elevar2195"
+                    }
+                ],
+                "attributes": {},
+                "price_source": {
+                    "price": {
+                        "amount": 150,
+                        "currency": "USD"
+                    },
+                    "discriminator": "catalog"
+                }
+            },
+            {
+                "number": "39286659711049",
+                "name": "Women's Lusso Slide Neon Peach - NEON PEACH / 7",
+                "quantity": 1,
+                "local": {
+                    "experience": {
+                        "id": "exp-f0bad7b182b24e0d96d1f23ac55b08c4",
+                        "key": "canada",
+                        "name": "Canada"
+                    },
+                    "prices": [
+                        {
+                            "currency": "CAD",
+                            "amount": 228.95,
+                            "label": "CA$228.95",
+                            "base": {
+                                "amount": 174.83,
+                                "currency": "USD",
+                                "label": "US$174.83"
+                            },
+                            "includes": {
+                                "key": "none",
+                                "label": "GST and duty not included"
+                            },
+                            "key": "localized_item_price"
+                        },
+                        {
+                            "currency": "CAD",
+                            "amount": 13.51,
+                            "label": "CA$13.51",
+                            "base": {
+                                "amount": 10.31,
+                                "currency": "USD",
+                                "label": "US$10.31"
+                            },
+                            "name": "GST",
+                            "accuracy": "calculated",
+                            "key": "localized_item_vat"
+                        },
+                        {
+                            "currency": "CAD",
+                            "amount": 41.21,
+                            "label": "CA$41.21",
+                            "base": {
+                                "amount": 31.47,
+                                "currency": "USD",
+                                "label": "US$31.47"
+                            },
+                            "key": "localized_item_duty"
+                        }
+                    ],
+                    "rates": [],
+                    "spot_rates": [],
+                    "status": "included",
+                    "attributes": {
+                        "weight": "2.77",
+                        "display_variant_title": "NEON PEACH / 7",
+                        "url": "https://www.athleticpropulsionlabs.com/products/womens-lusso-slide-neon-peach?variant=39286659711049",
+                        "option1": "NEON PEACH",
+                        "weight_unit": "lb",
+                        "product_handle": "womens-lusso-slide-neon-peach",
+                        "product_type": "FOOTWEAR - WOMEN'S",
+                        "fulfillment_service": "manual",
+                        "taxable": "true",
+                        "product_id": "6562278047817",
+                        "option2": "7",
+                        "vendor": "Athletic Propulsion Labs",
+                        "inventory_policy": "deny",
+                        "sku": "840222803061",
+                        "source": "shopify",
+                        "barcode": "840222803061",
+                        "inventory_management": "shopify",
+                        "product_title": "Women's Lusso Slide Neon Peach",
+                        "requires_shipping": "true",
+                        "variant_title": "NEON PEACH / 7",
+                        "grams": "1256.0",
+                        "fulfillment_method": "physical"
+                    },
+                    "price_attributes": {}
+                },
+                "id": "lin-9425ccee2fe34145980c9a719239d57b",
+                "discounts": [
+                    {
+                        "amount": -217.5,
+                        "currency": "CAD",
+                        "label": "-CA$217.50",
+                        "base": {
+                            "amount": -166.09,
+                            "currency": "USD",
+                            "label": "-US$166.09"
+                        },
+                        "requested": {
+                            "amount": 217.5,
+                            "currency": "CAD"
+                        },
+                        "discount_label": "elevar2195"
+                    }
+                ],
+                "attributes": {},
+                "price_source": {
+                    "price": {
+                        "amount": 175,
+                        "currency": "USD"
+                    },
+                    "discriminator": "catalog"
+                }
+            }
+        ],
+        "deliveries": [
+            {
+                "id": "del-453426db209641e98fa68ed3118e5c86",
+                "items": [
+                    {
+                        "number": "39286585131081",
+                        "quantity": 1,
+                        "price": {
+                            "currency": "CAD",
+                            "amount": 195.95,
+                            "base": {
+                                "amount": 149.63,
+                                "currency": "USD"
+                            }
+                        },
+                        "attributes": {
+                            "eur_price": "133.60"
+                        },
+                        "line_number": 0
+                    },
+                    {
+                        "number": "39286659711049",
+                        "quantity": 1,
+                        "price": {
+                            "currency": "CAD",
+                            "amount": 228.95,
+                            "base": {
+                                "amount": 174.83,
+                                "currency": "USD"
+                            }
+                        },
+                        "attributes": {
+                            "eur_price": "156.10"
+                        },
+                        "line_number": 1
+                    }
+                ],
+                "options": [
+                    {
+                        "id": "opt-d8584372d6954a659bc6baee35cf176f",
+                        "cost": {
+                            "currency": "CAD",
+                            "amount": 27.45,
+                            "label": "CA$27.45",
+                            "base": {
+                                "amount": 20.95935,
+                                "currency": "USD",
+                                "label": "US$20.96"
+                            },
+                            "details": [
+                                {
+                                    "source": "ratecard",
+                                    "currency": "CAD",
+                                    "amount": 27.45,
+                                    "label": "CA$27.45",
+                                    "components": [
+                                        {
+                                            "key": "ratecard_fuel_surcharge",
+                                            "currency": "CAD",
+                                            "amount": 2.33,
+                                            "label": "CA$2.33",
+                                            "base": {
+                                                "amount": 1.77935,
+                                                "currency": "USD",
+                                                "label": "US$1.78"
+                                            }
+                                        },
+                                        {
+                                            "key": "ratecard_emergency_situation_surcharge_fee",
+                                            "currency": "CAD",
+                                            "amount": 0.59,
+                                            "label": "CA$0.59",
+                                            "base": {
+                                                "amount": 0.44999999999999996,
+                                                "currency": "USD",
+                                                "label": "US$0.45"
+                                            }
+                                        },
+                                        {
+                                            "key": "ratecard_base_cost",
+                                            "currency": "CAD",
+                                            "amount": 24.53,
+                                            "label": "CA$24.53",
+                                            "base": {
+                                                "amount": 18.73,
+                                                "currency": "USD",
+                                                "label": "US$18.73"
+                                            }
+                                        }
+                                    ],
+                                    "base": {
+                                        "amount": 20.95935,
+                                        "currency": "USD",
+                                        "label": "US$20.96"
+                                    }
+                                }
+                            ]
+                        },
+                        "delivered_duty": "paid",
+                        "price": {
+                            "currency": "CAD",
+                            "amount": 27.45,
+                            "label": "CA$27.45",
+                            "base": {
+                                "amount": 20.96,
+                                "currency": "USD",
+                                "label": "US$20.96"
+                            }
+                        },
+                        "service": {
+                            "id": "dhl-express-worldwide",
+                            "carrier": {
+                                "id": "dhl"
+                            },
+                            "name": "Express Worldwide"
+                        },
+                        "tier": {
+                            "id": "tie-dad70c74c1394198a13f9d3683de59be",
+                            "integration": "information",
+                            "name": "DHL Express Shipping",
+                            "services": [
+                                "dhl-express-worldwide"
+                            ],
+                            "strategy": "fastest",
+                            "visibility": "public",
+                            "currency": "USD",
+                            "display": {
+                                "estimate": {
+                                    "type": "calculated",
+                                    "label": "2-4 Business Days"
+                                }
+                            },
+                            "settings": {
+                                "availability": "always"
+                            }
+                        },
+                        "window": {
+                            "from": "2021-10-07T00:00:00.000Z",
+                            "to": "2021-10-11T00:00:00.000Z",
+                            "timezone": "America/Toronto",
+                            "label": "2-4 Business Days"
+                        },
+                        "rule_outcome": {
+                            "discriminator": "at_cost"
+                        },
+                        "weight": {
+                            "gravitational": {
+                                "value": "4.00",
+                                "units": "pound"
+                            },
+                            "dimensional": {
+                                "value": "4.68",
+                                "units": "inch"
+                            }
+                        },
+                        "ratecard_owner": "flow"
+                    }
+                ],
+                "key": "F475915",
+                "center": {
+                    "id": "cen-a75f06713f83415bb33899691623e92c",
+                    "key": "default",
+                    "address": {
+                        "contact": {
+                            "name": {}
+                        },
+                        "location": {
+                            "streets": [
+                                "108 Mayo Ave"
+                            ],
+                            "city": "City of Industry",
+                            "province": "CA",
+                            "postal": "91789",
+                            "country": "USA"
+                        }
+                    }
+                },
+                "prices": [
+                    {
+                        "key": "subtotal",
+                        "currency": "CAD",
+                        "amount": 424.9,
+                        "label": "CA$424.90",
+                        "base": {
+                            "amount": 324.46,
+                            "currency": "USD",
+                            "label": "US$324.46"
+                        },
+                        "components": [
+                            {
+                                "key": "item_price",
+                                "currency": "CAD",
+                                "amount": 425.6,
+                                "label": "CA$425.60",
+                                "base": {
+                                    "amount": 325,
+                                    "currency": "USD",
+                                    "label": "US$325.00"
+                                },
+                                "name": "Item price"
+                            },
+                            {
+                                "key": "rounding",
+                                "currency": "CAD",
+                                "amount": -0.7,
+                                "label": "-CA$0.70",
+                                "base": {
+                                    "amount": -0.54,
+                                    "currency": "USD",
+                                    "label": "-US$0.54"
+                                },
+                                "name": "Rounding"
+                            }
+                        ],
+                        "accuracy": "calculated",
+                        "name": "Subtotal"
+                    },
+                    {
+                        "key": "shipping",
+                        "currency": "CAD",
+                        "amount": 27.45,
+                        "label": "CA$27.45",
+                        "base": {
+                            "amount": 20.96,
+                            "currency": "USD",
+                            "label": "US$20.96"
+                        },
+                        "components": [
+                            {
+                                "key": "shipping",
+                                "currency": "CAD",
+                                "amount": 27.45,
+                                "label": "CA$27.45",
+                                "base": {
+                                    "amount": 20.96,
+                                    "currency": "USD",
+                                    "label": "US$20.96"
+                                },
+                                "name": "Shipping"
+                            }
+                        ],
+                        "accuracy": "calculated",
+                        "name": "Shipping"
+                    },
+                    {
+                        "key": "discount",
+                        "currency": "CAD",
+                        "amount": -403.65,
+                        "label": "-CA$403.65",
+                        "base": {
+                            "amount": -308.24,
+                            "currency": "USD",
+                            "label": "-US$308.24"
+                        },
+                        "components": [
+                            {
+                                "key": "item_discount",
+                                "currency": "CAD",
+                                "amount": -403.65,
+                                "label": "-CA$403.65",
+                                "base": {
+                                    "amount": -308.24,
+                                    "currency": "USD",
+                                    "label": "-US$308.24"
+                                },
+                                "name": "elevar2195"
+                            }
+                        ],
+                        "accuracy": "calculated",
+                        "name": "Discount"
+                    },
+                    {
+                        "key": "vat",
+                        "currency": "CAD",
+                        "amount": 1.06,
+                        "label": "CA$1.06",
+                        "base": {
+                            "amount": 0.81,
+                            "currency": "USD",
+                            "label": "US$0.81"
+                        },
+                        "components": [
+                            {
+                                "key": "vat_item_price",
+                                "currency": "CAD",
+                                "amount": 1.06,
+                                "label": "CA$1.06",
+                                "base": {
+                                    "amount": 0.81,
+                                    "currency": "USD",
+                                    "label": "US$0.81"
+                                },
+                                "name": "GST on item price"
+                            },
+                            {
+                                "key": "vat_duties_item_price",
+                                "currency": "CAD",
+                                "amount": 0.19,
+                                "label": "CA$0.19",
+                                "base": {
+                                    "amount": 0.15,
+                                    "currency": "USD",
+                                    "label": "US$0.15"
+                                },
+                                "name": "GST on duties on item price"
+                            },
+                            {
+                                "key": "vat_deminimis",
+                                "currency": "CAD",
+                                "amount": -0.19,
+                                "label": "-CA$0.19",
+                                "base": {
+                                    "amount": -0.15,
+                                    "currency": "USD",
+                                    "label": "-US$0.15"
+                                },
+                                "name": "GST de minimis adjustment"
+                            }
+                        ],
+                        "accuracy": "calculated",
+                        "name": "GST"
+                    }
+                ],
+                "total": {
+                    "currency": "CAD",
+                    "amount": 49.76,
+                    "label": "CA$49.76",
+                    "base": {
+                        "amount": 37.99,
+                        "currency": "USD",
+                        "label": "US$37.99"
+                    },
+                    "key": "localized_total"
+                },
+                "goods_supply": "export",
+                "merchant_of_record_flow_entity": "flow-usa",
+                "discriminator": "physical_delivery"
+            }
+        ],
+        "selections": [
+            "opt-d8584372d6954a659bc6baee35cf176f"
+        ],
+        "prices": [
+            {
+                "key": "subtotal",
+                "currency": "CAD",
+                "amount": 424.9,
+                "label": "CA$424.90",
+                "base": {
+                    "amount": 324.46,
+                    "currency": "USD",
+                    "label": "US$324.46"
+                },
+                "components": [
+                    {
+                        "key": "item_price",
+                        "currency": "CAD",
+                        "amount": 425.6,
+                        "label": "CA$425.60",
+                        "base": {
+                            "amount": 325,
+                            "currency": "USD",
+                            "label": "US$325.00"
+                        },
+                        "name": "Item price"
+                    },
+                    {
+                        "key": "rounding",
+                        "currency": "CAD",
+                        "amount": -0.7,
+                        "label": "-CA$0.70",
+                        "base": {
+                            "amount": -0.54,
+                            "currency": "USD",
+                            "label": "-US$0.54"
+                        },
+                        "name": "Rounding"
+                    }
+                ],
+                "accuracy": "calculated",
+                "name": "Subtotal"
+            },
+            {
+                "key": "shipping",
+                "currency": "CAD",
+                "amount": 27.45,
+                "label": "CA$27.45",
+                "base": {
+                    "amount": 20.96,
+                    "currency": "USD",
+                    "label": "US$20.96"
+                },
+                "components": [
+                    {
+                        "key": "shipping",
+                        "currency": "CAD",
+                        "amount": 27.45,
+                        "label": "CA$27.45",
+                        "base": {
+                            "amount": 20.96,
+                            "currency": "USD",
+                            "label": "US$20.96"
+                        },
+                        "name": "Shipping"
+                    }
+                ],
+                "accuracy": "calculated",
+                "name": "Shipping"
+            },
+            {
+                "key": "discount",
+                "currency": "CAD",
+                "amount": -403.65,
+                "label": "-CA$403.65",
+                "base": {
+                    "amount": -308.24,
+                    "currency": "USD",
+                    "label": "-US$308.24"
+                },
+                "components": [
+                    {
+                        "key": "item_discount",
+                        "currency": "CAD",
+                        "amount": -403.65,
+                        "label": "-CA$403.65",
+                        "base": {
+                            "amount": -308.24,
+                            "currency": "USD",
+                            "label": "-US$308.24"
+                        },
+                        "name": "elevar2195"
+                    }
+                ],
+                "accuracy": "calculated",
+                "name": "Discount"
+            },
+            {
+                "key": "vat",
+                "currency": "CAD",
+                "amount": 1.06,
+                "label": "CA$1.06",
+                "base": {
+                    "amount": 0.81,
+                    "currency": "USD",
+                    "label": "US$0.81"
+                },
+                "components": [
+                    {
+                        "key": "vat_item_price",
+                        "currency": "CAD",
+                        "amount": 1.06,
+                        "label": "CA$1.06",
+                        "base": {
+                            "amount": 0.81,
+                            "currency": "USD",
+                            "label": "US$0.81"
+                        },
+                        "name": "GST on item price"
+                    },
+                    {
+                        "key": "vat_duties_item_price",
+                        "currency": "CAD",
+                        "amount": 0.19,
+                        "label": "CA$0.19",
+                        "base": {
+                            "amount": 0.15,
+                            "currency": "USD",
+                            "label": "US$0.15"
+                        },
+                        "name": "GST on duties on item price"
+                    },
+                    {
+                        "key": "vat_deminimis",
+                        "currency": "CAD",
+                        "amount": -0.19,
+                        "label": "-CA$0.19",
+                        "base": {
+                            "amount": -0.15,
+                            "currency": "USD",
+                            "label": "-US$0.15"
+                        },
+                        "name": "GST de minimis adjustment"
+                    }
+                ],
+                "accuracy": "calculated",
+                "name": "GST"
+            }
+        ],
+        "total": {
+            "currency": "CAD",
+            "amount": 49.76,
+            "label": "CA$49.76",
+            "base": {
+                "amount": 37.99,
+                "currency": "USD",
+                "label": "US$37.99"
+            },
+            "key": "localized_total"
+        },
+        "attributes": {
+            "pricing_key": "{\"vat\":\"displayed\",\"duty\":\"displayed\",\"rounding\":{\"type\":\"pattern\",\"method\":\"nearest\",\"value\":0.95}}",
+            "flow_vat_name": "GST",
+            "flow_v2_checkout_id": "F67ed895ea2694b4dfbbceca0a3301ddc19PpjpT",
+            "shopify_discount_code": "elevar2195",
+            "flow_duty_name": "Duties",
+            "initial_input_data_source": "session_persistence",
+            "flow_integration": "shopify",
+            "checkout-persistence": "true",
+            "applied_promotion": "ELEVAR2195"
+        },
+        "merchant_of_record": "flow",
+        "experience": {
+            "key": "canada",
+            "discriminator": "experience_reference"
+        },
+        "submitted_at": "2021-10-05T16:56:46.698Z",
+        "lines": [
+            {
+                "item_number": "39286585131081",
+                "quantity": 1,
+                "price": {
+                    "currency": "CAD",
+                    "amount": 195.95,
+                    "label": "CA$195.95",
+                    "base": {
+                        "amount": 149.63,
+                        "currency": "USD",
+                        "label": "US$149.63"
+                    }
+                },
+                "total": {
+                    "currency": "CAD",
+                    "amount": 195.95,
+                    "label": "CA$195.95",
+                    "base": {
+                        "amount": 149.63,
+                        "currency": "USD",
+                        "label": "US$149.63"
+                    }
+                },
+                "id": "lin-de5dbf7cbf0f46efaa2d5fa2b0385ed7",
+                "attributes": {}
+            },
+            {
+                "item_number": "39286659711049",
+                "quantity": 1,
+                "price": {
+                    "currency": "CAD",
+                    "amount": 228.95,
+                    "label": "CA$228.95",
+                    "base": {
+                        "amount": 174.83,
+                        "currency": "USD",
+                        "label": "US$174.83"
+                    }
+                },
+                "total": {
+                    "currency": "CAD",
+                    "amount": 228.95,
+                    "label": "CA$228.95",
+                    "base": {
+                        "amount": 174.83,
+                        "currency": "USD",
+                        "label": "US$174.83"
+                    }
+                },
+                "id": "lin-9425ccee2fe34145980c9a719239d57b",
+                "attributes": {}
+            }
+        ],
+        "promotions": {
+            "applied": [],
+            "available": []
+        },
+        "payments": [
+            {
+                "id": "opm-fca60e4f0e444da7aff92617578360f2",
+                "type": "card",
+                "merchant_of_record": "flow",
+                "reference": "aut-lRHvRHAcz1ZvErAXjr4jGSZOclPlK0ie",
+                "description": "VISA 6547",
+                "total": {
+                    "currency": "CAD",
+                    "amount": 49.76,
+                    "label": "CA$49.76",
+                    "base": {
+                        "amount": 37.99,
+                        "currency": "USD",
+                        "label": "US$37.99"
+                    }
+                },
+                "attributes": {},
+                "address": {
+                    "name": {
+                        "first": "Jonathan",
+                        "last": "Cairo"
+                    },
+                    "streets": [
+                        "1 - 2560 Pegasus Boulevard  NW"
+                    ],
+                    "city": "181282",
+                    "province": "Alberta",
+                    "postal": "T5E6V4",
+                    "country": "CAN"
+                },
+                "date": "2021-10-05T16:56:44.933Z",
+                "method": "visa"
+            }
+        ],
+        "balance": {
+            "currency": "CAD",
+            "amount": 0,
+            "label": "CA$0.00",
+            "base": {
+                "amount": 0,
+                "currency": "USD",
+                "label": "US$0.00"
+            },
+            "key": "localized_total"
+        },
+        "geo": {
+            "country": "CAN",
+            "ip": "50.99.236.144",
+            "currency": "CAD",
+            "language": "en"
+        },
+        "discriminator": "order"
+    },
+    "content": {
+        "itemContents": [
+            {
+                "item": {
+                    "id": "cit-d2029987a6144ea19c83c01772e6dce4",
+                    "number": "39286659711049",
+                    "locale": "en-US",
+                    "name": "Women's Lusso Slide Neon Peach - NEON PEACH / 7",
+                    "price": {
+                        "amount": 175,
+                        "currency": "USD",
+                        "label": "US$175.00"
+                    },
+                    "categories": [
+                        "Color: Neon",
+                        "Color: Orange",
+                        "Footwear: Lusso Slide",
+                        "Footwear: Slide",
+                        "Gender: Women",
+                        "PF21",
+                        "Size: 10",
+                        "Size: 11",
+                        "Size: 5",
+                        "Size: 6",
+                        "Size: 7",
+                        "Size: 8",
+                        "Size: 9",
+                        "Type: Slide",
+                        "YGroup-womens-lusso-slide",
+                        "FOOTWEAR - WOMEN'S"
+                    ],
+                    "attributes": {
+                        "weight": "2.77",
+                        "display_variant_title": "NEON PEACH / 7",
+                        "url": "https://www.athleticpropulsionlabs.com/products/womens-lusso-slide-neon-peach?variant=39286659711049",
+                        "option1": "NEON PEACH",
+                        "weight_unit": "lb",
+                        "product_handle": "womens-lusso-slide-neon-peach",
+                        "product_type": "FOOTWEAR - WOMEN'S",
+                        "fulfillment_service": "manual",
+                        "taxable": "true",
+                        "product_id": "6562278047817",
+                        "option2": "7",
+                        "vendor": "Athletic Propulsion Labs",
+                        "inventory_policy": "deny",
+                        "sku": "840222803061",
+                        "source": "shopify",
+                        "barcode": "840222803061",
+                        "inventory_management": "shopify",
+                        "product_title": "Women's Lusso Slide Neon Peach",
+                        "requires_shipping": "true",
+                        "variant_title": "NEON PEACH / 7",
+                        "grams": "1256.0",
+                        "fulfillment_method": "physical"
+                    },
+                    "dimensions": {
+                        "product": {
+                            "weight": {
+                                "value": "2.77",
+                                "units": "pound"
+                            }
+                        }
+                    },
+                    "images": [
+                        {
+                            "url": "https://cdn.shopify.com/s/files/1/0008/8116/4339/products/lussoslide-neonpeach-5.jpg?v=1622666215",
+                            "tags": [],
+                            "attributes": {
+                                "position": "1"
+                            }
+                        },
+                        {
+                            "url": "https://cdn.shopify.com/s/files/1/0008/8116/4339/products/lussoslide-neonpeach-1.jpg?v=1622666219",
+                            "tags": [],
+                            "attributes": {
+                                "position": "2"
+                            }
+                        },
+                        {
+                            "url": "https://cdn.shopify.com/s/files/1/0008/8116/4339/products/lussoslide-neonpeach-2.jpg?v=1622666221",
+                            "tags": [],
+                            "attributes": {
+                                "position": "3"
+                            }
+                        },
+                        {
+                            "url": "https://cdn.shopify.com/s/files/1/0008/8116/4339/products/lussoslide-neonpeach-3.jpg?v=1622666224",
+                            "tags": [],
+                            "attributes": {
+                                "position": "4"
+                            }
+                        },
+                        {
+                            "url": "https://cdn.shopify.com/s/files/1/0008/8116/4339/products/lussoslide-neonpeach-4.jpg?v=1622666226",
+                            "tags": [],
+                            "attributes": {
+                                "position": "5"
+                            }
+                        },
+                        {
+                            "url": "https://cdn.shopify.com/s/files/1/0008/8116/4339/products/lussoslide-neonpeach-6.jpg?v=1622666228",
+                            "tags": [],
+                            "attributes": {
+                                "position": "6"
+                            }
+                        },
+                        {
+                            "url": "https://cdn.shopify.com/s/files/1/0008/8116/4339/products/lussoslide-neonpeach-5_100x100.jpg?v=1622666215",
+                            "tags": [
+                                "thumbnail",
+                                "checkout"
+                            ],
+                            "attributes": {
+                                "position": "1"
+                            }
+                        },
+                        {
+                            "url": "https://cdn.shopify.com/s/files/1/0008/8116/4339/products/lussoslide-neonpeach-1_100x100.jpg?v=1622666219",
+                            "tags": [
+                                "thumbnail",
+                                "checkout"
+                            ],
+                            "attributes": {
+                                "position": "2"
+                            }
+                        },
+                        {
+                            "url": "https://cdn.shopify.com/s/files/1/0008/8116/4339/products/lussoslide-neonpeach-2_100x100.jpg?v=1622666221",
+                            "tags": [
+                                "thumbnail",
+                                "checkout"
+                            ],
+                            "attributes": {
+                                "position": "3"
+                            }
+                        },
+                        {
+                            "url": "https://cdn.shopify.com/s/files/1/0008/8116/4339/products/lussoslide-neonpeach-3_100x100.jpg?v=1622666224",
+                            "tags": [
+                                "thumbnail",
+                                "checkout"
+                            ],
+                            "attributes": {
+                                "position": "4"
+                            }
+                        },
+                        {
+                            "url": "https://cdn.shopify.com/s/files/1/0008/8116/4339/products/lussoslide-neonpeach-4_100x100.jpg?v=1622666226",
+                            "tags": [
+                                "thumbnail",
+                                "checkout"
+                            ],
+                            "attributes": {
+                                "position": "5"
+                            }
+                        },
+                        {
+                            "url": "https://cdn.shopify.com/s/files/1/0008/8116/4339/products/lussoslide-neonpeach-6_100x100.jpg?v=1622666228",
+                            "tags": [
+                                "thumbnail",
+                                "checkout"
+                            ],
+                            "attributes": {
+                                "position": "6"
+                            }
+                        }
+                    ],
+                    "description": "<p>The APL Lusso Slide is truly the height of luxury and comfort. Featuring a soft Nappa leather intricately, cross-stitched strap and footbed, your feet will thank you every time you slip them on. The 3D molded footbed is accented with a matching APL logo to massage your feet with every step. Our signature midsole/outsole uses our tried and true Propelium® compound offering the same great cushioning and rebound from the running shoes you love. Treat yourself, whether you want to recover after a great stay-at-home workout or add a bit of at-home or around the town style, the APL Lusso Slide has everything you need to relax in style. Wt. 4.0 oz.</p>\n<p>Any APL slide that features natural materials including but not limited to leather, suede, wool, shearling, etc. should not be worn in or around water. The natural materials found in these slides are recommended for casual use in dry climates, and have not been treated for excessive moisture.</p>\n<p><br data-mce-fragment=\"1\"><strong>All of our slides are unisex. If your size is sold out, simply select a men's size on the site and adjust the fit down by a size and half. For example, a size 9 in women's is a size 7.5 in men’s.</strong></p>",
+                    "local": {
+                        "experience": {
+                            "id": "exp-200711849fc74ef4b7a83833c29f6aab",
+                            "key": "canada",
+                            "name": "Canada",
+                            "country": "CAN",
+                            "currency": "CAD",
+                            "language": "en"
+                        },
+                        "prices": [
+                            {
+                                "currency": "CAD",
+                                "amount": 228.95,
+                                "label": "CA$228.95",
+                                "base": {
+                                    "amount": 174.83,
+                                    "currency": "USD",
+                                    "label": "US$174.83"
+                                },
+                                "includes": {
+                                    "key": "none",
+                                    "label": "HST and duty not included"
+                                },
+                                "key": "localized_item_price"
+                            },
+                            {
+                                "currency": "CAD",
+                                "amount": 40.53,
+                                "label": "CA$40.53",
+                                "base": {
+                                    "amount": 30.95,
+                                    "currency": "USD",
+                                    "label": "US$30.95"
+                                },
+                                "name": "HST",
+                                "accuracy": "calculated",
+                                "key": "localized_item_vat"
+                            },
+                            {
+                                "currency": "CAD",
+                                "amount": 41.21,
+                                "label": "CA$41.21",
+                                "base": {
+                                    "amount": 31.47,
+                                    "currency": "USD",
+                                    "label": "US$31.47"
+                                },
+                                "key": "localized_item_duty"
+                            }
+                        ],
+                        "rates": [],
+                        "spot_rates": [],
+                        "status": "included",
+                        "attributes": {
+                            "weight": "2.77",
+                            "display_variant_title": "NEON PEACH / 7",
+                            "url": "https://www.athleticpropulsionlabs.com/products/womens-lusso-slide-neon-peach?variant=39286659711049",
+                            "option1": "NEON PEACH",
+                            "weight_unit": "lb",
+                            "product_handle": "womens-lusso-slide-neon-peach",
+                            "product_type": "FOOTWEAR - WOMEN'S",
+                            "fulfillment_service": "manual",
+                            "taxable": "true",
+                            "product_id": "6562278047817",
+                            "option2": "7",
+                            "vendor": "Athletic Propulsion Labs",
+                            "inventory_policy": "deny",
+                            "sku": "840222803061",
+                            "source": "shopify",
+                            "barcode": "840222803061",
+                            "inventory_management": "shopify",
+                            "product_title": "Women's Lusso Slide Neon Peach",
+                            "requires_shipping": "true",
+                            "variant_title": "NEON PEACH / 7",
+                            "grams": "1256.0",
+                            "fulfillment_method": "physical"
+                        },
+                        "price_attributes": {}
+                    }
+                },
+                "name": "Women's Lusso Slide Neon Peach - NEON PEACH / 7",
+                "attributes": [],
+                "description": "<p>The APL Lusso Slide is truly the height of luxury and comfort. Featuring a soft Nappa leather intricately, cross-stitched strap and footbed, your feet will thank you every time you slip them on. The 3D molded footbed is accented with a matching APL logo to massage your feet with every step. Our signature midsole/outsole uses our tried and true Propelium® compound offering the same great cushioning and rebound from the running shoes you love. Treat yourself, whether you want to recover after a great stay-at-home workout or add a bit of at-home or around the town style, the APL Lusso Slide has everything you need to relax in style. Wt. 4.0 oz.</p>\n<p>Any APL slide that features natural materials including but not limited to leather, suede, wool, shearling, etc. should not be worn in or around water. The natural materials found in these slides are recommended for casual use in dry climates, and have not been treated for excessive moisture.</p>\n<p><br data-mce-fragment=\"1\"><strong>All of our slides are unisex. If your size is sold out, simply select a men's size on the site and adjust the fit down by a size and half. For example, a size 9 in women's is a size 7.5 in men’s.</strong></p>",
+                "image": {
+                    "url": "https://cdn.shopify.com/s/files/1/0008/8116/4339/products/lussoslide-neonpeach-5_100x100.jpg?v=1622666215",
+                    "tags": [
+                        "thumbnail",
+                        "checkout"
+                    ],
+                    "attributes": {
+                        "position": "1"
+                    }
+                }
+            },
+            {
+                "item": {
+                    "id": "cit-e64c764dd462499eba29ebeef9d2f6fb",
+                    "number": "39286585131081",
+                    "locale": "en-US",
+                    "name": "Men's Iconic Slide Deep Brown / White / Cow - DEEP BROWN / WHITE / COW / 9",
+                    "price": {
+                        "amount": 150,
+                        "currency": "USD",
+                        "label": "US$150.00"
+                    },
+                    "categories": [
+                        "Color: Beige",
+                        "Color: Prints",
+                        "Color: White",
+                        "FA21",
+                        "Footwear: Slide",
+                        "Gender: Men",
+                        "PF21",
+                        "Size: 10",
+                        "Size: 11",
+                        "Size: 12",
+                        "Size: 13",
+                        "Size: 8",
+                        "Size: 9",
+                        "Type: Slide",
+                        "YGroup_mens-ichs",
+                        "FOOTWEAR - MEN'S"
+                    ],
+                    "attributes": {
+                        "weight": "1.77",
+                        "display_variant_title": "DEEP BROWN / WHITE / COW / 9",
+                        "url": "https://www.athleticpropulsionlabs.com/products/mens-iconic-slide-deep-brown-white-cow?variant=39286585131081",
+                        "option1": "DEEP BROWN / WHITE / COW",
+                        "weight_unit": "lb",
+                        "product_handle": "mens-iconic-slide-deep-brown-white-cow",
+                        "product_type": "FOOTWEAR - MEN'S",
+                        "fulfillment_service": "manual",
+                        "taxable": "true",
+                        "product_id": "6562263629897",
+                        "option2": "9",
+                        "vendor": "Athletic Propulsion Labs",
+                        "inventory_policy": "deny",
+                        "sku": "840222810113",
+                        "source": "shopify",
+                        "barcode": "840222810113",
+                        "inventory_management": "shopify",
+                        "product_title": "Men's Iconic Slide Deep Brown / White / Cow",
+                        "requires_shipping": "true",
+                        "variant_title": "DEEP BROWN / WHITE / COW / 9",
+                        "grams": "803.0",
+                        "fulfillment_method": "physical"
+                    },
+                    "dimensions": {
+                        "product": {
+                            "weight": {
+                                "value": "1.77",
+                                "units": "pound"
+                            }
+                        }
+                    },
+                    "images": [
+                        {
+                            "url": "https://cdn.shopify.com/s/files/1/0008/8116/4339/products/iconicslide-deepbrown-white-cow-5_ba97d062-7df5-4d44-b52c-23587fc09369.jpg?v=1622664801",
+                            "tags": [],
+                            "attributes": {
+                                "position": "1"
+                            }
+                        },
+                        {
+                            "url": "https://cdn.shopify.com/s/files/1/0008/8116/4339/products/iconicslide-deepbrown-white-cow-1_50aef56b-d6ca-4726-9c7f-3eb4e0df671b.jpg?v=1622664802",
+                            "tags": [],
+                            "attributes": {
+                                "position": "2"
+                            }
+                        },
+                        {
+                            "url": "https://cdn.shopify.com/s/files/1/0008/8116/4339/products/iconicslide-deepbrown-white-cow-2_d80712a9-709c-4929-a2ed-324370716f32.jpg?v=1622664805",
+                            "tags": [],
+                            "attributes": {
+                                "position": "3"
+                            }
+                        },
+                        {
+                            "url": "https://cdn.shopify.com/s/files/1/0008/8116/4339/products/iconicslide-deepbrown-white-cow-3_c8d0b165-e56d-40a4-95d8-eea9d00cccf9.jpg?v=1622664809",
+                            "tags": [],
+                            "attributes": {
+                                "position": "4"
+                            }
+                        },
+                        {
+                            "url": "https://cdn.shopify.com/s/files/1/0008/8116/4339/products/iconicslide-deepbrown-white-cow-4_8105be9e-0184-4a7f-a65f-ca25eb4e1ad7.jpg?v=1622664812",
+                            "tags": [],
+                            "attributes": {
+                                "position": "5"
+                            }
+                        },
+                        {
+                            "url": "https://cdn.shopify.com/s/files/1/0008/8116/4339/products/iconicslide-deepbrown-white-cow-6_97abf726-b0f6-4585-9671-04886f7dbd1e.jpg?v=1622664815",
+                            "tags": [],
+                            "attributes": {
+                                "position": "6"
+                            }
+                        },
+                        {
+                            "url": "https://cdn.shopify.com/s/files/1/0008/8116/4339/products/iconicslide-deepbrown-white-cow-5_ba97d062-7df5-4d44-b52c-23587fc09369_100x100.jpg?v=1622664801",
+                            "tags": [
+                                "thumbnail",
+                                "checkout"
+                            ],
+                            "attributes": {
+                                "position": "1"
+                            }
+                        },
+                        {
+                            "url": "https://cdn.shopify.com/s/files/1/0008/8116/4339/products/iconicslide-deepbrown-white-cow-1_50aef56b-d6ca-4726-9c7f-3eb4e0df671b_100x100.jpg?v=1622664802",
+                            "tags": [
+                                "thumbnail",
+                                "checkout"
+                            ],
+                            "attributes": {
+                                "position": "2"
+                            }
+                        },
+                        {
+                            "url": "https://cdn.shopify.com/s/files/1/0008/8116/4339/products/iconicslide-deepbrown-white-cow-2_d80712a9-709c-4929-a2ed-324370716f32_100x100.jpg?v=1622664805",
+                            "tags": [
+                                "thumbnail",
+                                "checkout"
+                            ],
+                            "attributes": {
+                                "position": "3"
+                            }
+                        },
+                        {
+                            "url": "https://cdn.shopify.com/s/files/1/0008/8116/4339/products/iconicslide-deepbrown-white-cow-3_c8d0b165-e56d-40a4-95d8-eea9d00cccf9_100x100.jpg?v=1622664809",
+                            "tags": [
+                                "thumbnail",
+                                "checkout"
+                            ],
+                            "attributes": {
+                                "position": "4"
+                            }
+                        },
+                        {
+                            "url": "https://cdn.shopify.com/s/files/1/0008/8116/4339/products/iconicslide-deepbrown-white-cow-4_8105be9e-0184-4a7f-a65f-ca25eb4e1ad7_100x100.jpg?v=1622664812",
+                            "tags": [
+                                "thumbnail",
+                                "checkout"
+                            ],
+                            "attributes": {
+                                "position": "5"
+                            }
+                        },
+                        {
+                            "url": "https://cdn.shopify.com/s/files/1/0008/8116/4339/products/iconicslide-deepbrown-white-cow-6_97abf726-b0f6-4585-9671-04886f7dbd1e_100x100.jpg?v=1622664815",
+                            "tags": [
+                                "thumbnail",
+                                "checkout"
+                            ],
+                            "attributes": {
+                                "position": "6"
+                            }
+                        }
+                    ],
+                    "description": "<p>The Iconic Calf Hair Slide offers the same great comfort you know and love, now with a fashionable leather strap. Featuring a dyed, real fur cowhide upper there is a print or pattern to fit your every need. The antimicrobial mesh covers a 3D molded footbed that massages your feet with every step. The newly developed midsole/outsole uses our tried and true Propelium® compound offering the same great cushioning and rebound from the running shoes you love. Whether you want to recover after a great workout or give your feet a break from a long day of errands, the APL Iconic Calf Hair Slide has everything you need to relax in style. Wt. 4.0 oz.</p>\n<p><br><strong>All of our slides are unisex. If your size is sold out, simply select a women's size on the site and adjust the fit up by a size and half. For example, a size 7 in men’s is a size 8.5 in women’s.</strong></p>",
+                    "local": {
+                        "experience": {
+                            "id": "exp-200711849fc74ef4b7a83833c29f6aab",
+                            "key": "canada",
+                            "name": "Canada",
+                            "country": "CAN",
+                            "currency": "CAD",
+                            "language": "en"
+                        },
+                        "prices": [
+                            {
+                                "currency": "CAD",
+                                "amount": 195.95,
+                                "label": "CA$195.95",
+                                "base": {
+                                    "amount": 149.63,
+                                    "currency": "USD",
+                                    "label": "US$149.63"
+                                },
+                                "includes": {
+                                    "key": "none",
+                                    "label": "HST and duty not included"
+                                },
+                                "key": "localized_item_price"
+                            },
+                            {
+                                "currency": "CAD",
+                                "amount": 34.68,
+                                "label": "CA$34.68",
+                                "base": {
+                                    "amount": 26.49,
+                                    "currency": "USD",
+                                    "label": "US$26.49"
+                                },
+                                "name": "HST",
+                                "accuracy": "calculated",
+                                "key": "localized_item_vat"
+                            },
+                            {
+                                "currency": "CAD",
+                                "amount": 35.27,
+                                "label": "CA$35.27",
+                                "base": {
+                                    "amount": 26.93,
+                                    "currency": "USD",
+                                    "label": "US$26.93"
+                                },
+                                "key": "localized_item_duty"
+                            }
+                        ],
+                        "rates": [],
+                        "spot_rates": [],
+                        "status": "included",
+                        "attributes": {
+                            "weight": "1.77",
+                            "display_variant_title": "DEEP BROWN / WHITE / COW / 9",
+                            "url": "https://www.athleticpropulsionlabs.com/products/mens-iconic-slide-deep-brown-white-cow?variant=39286585131081",
+                            "option1": "DEEP BROWN / WHITE / COW",
+                            "weight_unit": "lb",
+                            "product_handle": "mens-iconic-slide-deep-brown-white-cow",
+                            "product_type": "FOOTWEAR - MEN'S",
+                            "fulfillment_service": "manual",
+                            "taxable": "true",
+                            "product_id": "6562263629897",
+                            "option2": "9",
+                            "vendor": "Athletic Propulsion Labs",
+                            "inventory_policy": "deny",
+                            "sku": "840222810113",
+                            "source": "shopify",
+                            "barcode": "840222810113",
+                            "inventory_management": "shopify",
+                            "product_title": "Men's Iconic Slide Deep Brown / White / Cow",
+                            "requires_shipping": "true",
+                            "variant_title": "DEEP BROWN / WHITE / COW / 9",
+                            "grams": "803.0",
+                            "fulfillment_method": "physical"
+                        },
+                        "price_attributes": {}
+                    }
+                },
+                "name": "Men's Iconic Slide Deep Brown / White / Cow - DEEP BROWN / WHITE / COW / 9",
+                "attributes": [],
+                "description": "<p>The Iconic Calf Hair Slide offers the same great comfort you know and love, now with a fashionable leather strap. Featuring a dyed, real fur cowhide upper there is a print or pattern to fit your every need. The antimicrobial mesh covers a 3D molded footbed that massages your feet with every step. The newly developed midsole/outsole uses our tried and true Propelium® compound offering the same great cushioning and rebound from the running shoes you love. Whether you want to recover after a great workout or give your feet a break from a long day of errands, the APL Iconic Calf Hair Slide has everything you need to relax in style. Wt. 4.0 oz.</p>\n<p><br><strong>All of our slides are unisex. If your size is sold out, simply select a women's size on the site and adjust the fit up by a size and half. For example, a size 7 in men’s is a size 8.5 in women’s.</strong></p>",
+                "image": {
+                    "url": "https://cdn.shopify.com/s/files/1/0008/8116/4339/products/iconicslide-deepbrown-white-cow-5_ba97d062-7df5-4d44-b52c-23587fc09369_100x100.jpg?v=1622664801",
+                    "tags": [
+                        "thumbnail",
+                        "checkout"
+                    ],
+                    "attributes": {
+                        "position": "1"
+                    }
+                }
+            }
+        ]
+    },
+    "appVersion": {
+        "family": "blaze",
+        "stage": "alpha"
+    }
+}
