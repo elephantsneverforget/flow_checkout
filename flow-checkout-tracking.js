@@ -1,3 +1,4 @@
+<script>
 // Defaults to using the base currency of the store
 // If you'd like reporting in foreign currency flip this
 // variable to false but be careful, as it stands blaze checkout
@@ -22,12 +23,15 @@ Flow.set('on', 'loaded', function () {
             case 'customer_info':
                 console.log('customer info');
                 pushDLBeginCheckout(data, productsInCart, true);
+                break;
             case 'delivery':
                 console.log('delivery');
                 pushDLAddShippingInfo(data, productsInCart, true);
+                break;
             case 'payment':
                 console.log('payment')
                 pushDLAddPaymentInfo(data, productsInCart, true);
+                break;
             default:
                 console.error('None of the expected checkout steps were provided.')
         }
@@ -61,6 +65,7 @@ function setListeners() {
     });
 
     // Fires once on transaction complete (checkout step 4)
+    // This event is used for both Blaze and legacy
     flow.checkout.onTransaction(function (data) {
         var productsInCart = getProductsInCartLegacyCheckout(data);
         pushDLPurchase(data, productsInCart, false);
@@ -237,3 +242,4 @@ function getValue(valueKey, data) {
 }
 //# sourceURL=flow-checkout-tracking.js
 // Shows under sources, no domain, flow-checkout-tracking.js
+<script>
