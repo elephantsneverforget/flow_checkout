@@ -5,6 +5,20 @@
 // steps only come in the stores base currency.
 var USE_BASE_CURRENCY = true;
 
+var __shopifyCartItems = [
+{%- for line_item in cart.items -%}
+    {
+        {%- if line_item.sku != blank -%}
+            id: {{- line_item.sku | json -}},
+        {%- else -%}
+            id: "{{- line_item.product_id | json -}}",
+        {%- endif -%}
+        productId: "{{- line_item.product_id | json -}}",
+        variantId: "{{- line_item.variant_id -}}",
+    },
+{%- endfor -%}
+]
+
 // Wait for script to load before attaching listeners. 2 parts. Flow does not fire load event for .checkout
 var interval = setInterval(function () {
     if (typeof window.flow.checkout !== 'undefined') {
@@ -145,11 +159,14 @@ function getProductsInCartBlazeCheckout(data) {
     data.lines.forEach((orderItem) => {
         if (orderItem) {
             // This is section is functional and semi tested in the browser
+            variant_id = orderItem.number; 
             items.push({
                 'brand': orderItem.brand,
                 'category': orderItem.category,
                 // This is a variant ID and the only product id available here.
                 'variant_id': orderItem.number,
+                'product_id': getProductId(variant_id),
+                'id': getProductSKU(variant_id),
                 // All we have is the order item name no variant info
                 // These aren't al formatted the same so tough to seperate out variant from product name
                 'variant': orderItem.name,
@@ -229,6 +246,17 @@ function getSubtotal(data) {
     // total excludes tax/discounts/shipping. Full price of products.
     return getValue('subtotal', data) + getValue('discount', data);
 }
+
+function getProductId(variantId) {
+    var shopifyCartItem = __shopifyCartItems.find(function(item) {return item.variantId === variantId;})
+    return shopifyCartItem.productId ? shopifyCartItem.productId : variantId;
+}
+
+function getProductSKU(variantId) {
+    var shopifyCartItem = __shopifyCartItems.find(function(item) {return item.variantId === variantId;})
+    return shopifyCartItem.id ? shopifyCartItem.id : variantId;
+}
+
 
 function getValue(valueKey, data) {
     var obj = data.order.prices.find(function (item) { return item.key === valueKey });
