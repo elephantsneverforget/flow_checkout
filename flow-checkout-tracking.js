@@ -5,6 +5,8 @@
 // steps only come in the stores base currency.
 var USE_BASE_CURRENCY = true;
 
+// Flow doesn't provide us with the SKU or product Id in Blaze checkout steps.
+// Render the cart for access to these during checkout.
 var __shopifyCartItems = [
 {%- for line_item in cart.items -%}
     {
