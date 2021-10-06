@@ -5,22 +5,6 @@
 // steps only come in the stores base currency.
 var USE_BASE_CURRENCY = true;
 
-// Flow doesn't provide us with the SKU or product Id in Blaze checkout steps.
-// Render the cart for access to these during checkout.
-var __shopifyCartItems = [
-{%- for line_item in cart.items -%}
-    {
-        {%- if line_item.sku != blank -%}
-            id: {{- line_item.sku | json -}},
-        {%- else -%}
-            id: "{{- line_item.product_id | json -}}",
-        {%- endif -%}
-        productId: "{{- line_item.product_id | json -}}",
-        variantId: "{{- line_item.variant_id -}}",
-    },
-{%- endfor -%}
-]
-
 // Wait for script to load before attaching listeners. 2 parts. Flow does not fire load event for .checkout
 var interval = setInterval(function () {
     if (typeof window.flow.checkout !== 'undefined') {
@@ -33,23 +17,51 @@ var interval = setInterval(function () {
 Flow.set('on', 'loaded', function () {
     // handle cart updated event
     Flow.on('blaze.checkoutProgress', function (data) {
-        console.log(data.step);
-        var productsInCart = getProductsInCartBlazeCheckout(data)
         switch (data.step) {
             case 'customer_info':
                 console.log('customer info');
-                pushDLBeginCheckout(data, productsInCart, true);
+                fetch('/cart.js')
+                    .then(function (response) { return response.json() })
+                    .then(function (shopifyCartData) {
+                        var productsInCart = getProductsInCartBlazeCheckout(data, shopifyCartData)
+                        pushDLBeginCheckout(data, productsInCart, true);
+                    })
+                    .catch(function (error) {
+                        errorLogger(error);
+                        var productsInCart = getProductsInCartBlazeCheckout(data)
+                        pushDLBeginCheckout(data, productsInCart, true);
+                    });
                 break;
             case 'delivery':
                 console.log('delivery');
-                pushDLAddShippingInfo(data, productsInCart, true);
+                fetch('/cart.js')
+                    .then(function (response) { return response.json() })
+                    .then(function (shopifyCartData) {
+                        var productsInCart = getProductsInCartBlazeCheckout(data, shopifyCartData)
+                        pushDLAddShippingInfo(data, productsInCart, true);
+                    })
+                    .catch(function (error) {
+                        errorLogger(error);
+                        var productsInCart = getProductsInCartBlazeCheckout(data);
+                        pushDLAddShippingInfo(data, productsInCart, true);
+                    });
                 break;
             case 'payment':
                 console.log('payment')
-                pushDLAddPaymentInfo(data, productsInCart, true);
+                fetch('/cart.js')
+                    .then(function (response) { return response.json() })
+                    .then(function (shopifyCartData) {
+                        var productsInCart = getProductsInCartBlazeCheckout(data, shopifyCartData)
+                        pushDLAddPaymentInfo(data, productsInCart, true);
+                    })
+                    .catch(function (error) {
+                        errorLogger(error);
+                        var productsInCart = getProductsInCartBlazeCheckout(data);
+                        pushDLAddPaymentInfo(data, productsInCart, true);
+                    });
                 break;
             default:
-                console.error('None of the expected checkout steps were provided.')
+                console.error('None of the expected checkout steps were provided by Blaze.')
         }
         console.log(data);
     })
@@ -59,6 +71,12 @@ Flow.set('on', 'loaded', function () {
     //     console.log('Checkout complete')
     // })
 });
+
+function errorLogger(error) {
+    console.error('An error occured retrieving the cart contents in Elevar Flow Checkout script.');
+    console.error('Using variant ID for product ID and Sku as fall back');
+    console.error(error);
+}
 
 // Legacy Flow events (still in use as of Oct 2021)
 function setListeners() {
@@ -156,19 +174,19 @@ function pushDLPurchase(data, productsInCart, blazeCheckout) {
     });
 }
 
-function getProductsInCartBlazeCheckout(data) {
+function getProductsInCartBlazeCheckout(data, shopifyCartData) {
     var items = [];
     data.lines.forEach((orderItem) => {
         if (orderItem) {
             // This is section is functional and semi tested in the browser
-            variant_id = orderItem.number; 
+            variant_id = orderItem.number;
             items.push({
                 'brand': orderItem.brand,
                 'category': orderItem.category,
-                // This is a variant ID and the only product id available here.
                 'variant_id': orderItem.number,
-                'product_id': getProductId(variant_id),
-                'id': getProductSKU(variant_id),
+                // If we don't have cart data use the variant id as a filler for product id and sku
+                'product_id': shopifyCartData ? getProductId(variant_id, shopifyCartData) : orderItem.number,
+                'id': shopifyCartData ? getProductSKU(variant_id, shopifyCartData) : orderItem.number,
                 // All we have is the order item name no variant info
                 // These aren't al formatted the same so tough to seperate out variant from product name
                 'variant': orderItem.name,
@@ -249,16 +267,15 @@ function getSubtotal(data) {
     return getValue('subtotal', data) + getValue('discount', data);
 }
 
-function getProductId(variantId) {
-    var shopifyCartItem = __shopifyCartItems.find(function(item) {return item.variantId === variantId;})
-    return shopifyCartItem.productId ? shopifyCartItem.productId : variantId;
+function getProductId(variantId, shopifyCartData) {
+    var shopifyCartItem = shopifyCartData.items.find(function (item) { return item.variant_id === parseInt(variantId); })
+    return shopifyCartItem.product_id ? shopifyCartItem.product_id.toString() : variantId;
 }
 
-function getProductSKU(variantId) {
-    var shopifyCartItem = __shopifyCartItems.find(function(item) {return item.variantId === variantId;})
-    return shopifyCartItem.id ? shopifyCartItem.id : variantId;
+function getProductSKU(variantId, shopifyCartData) {
+    var shopifyCartItem = shopifyCartData.items.find(function (item) { return item.variant_id === parseInt(variantId); })
+    return shopifyCartItem.sku ? shopifyCartItem.sku : variantId;
 }
-
 
 function getValue(valueKey, data) {
     var obj = data.order.prices.find(function (item) { return item.key === valueKey });
