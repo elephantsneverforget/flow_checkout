@@ -5,6 +5,7 @@
 // steps only come in the stores base currency.
 var USE_BASE_CURRENCY = true;
 
+// For legacy intermediate checkout events
 // Wait for script to load before attaching listeners. 2 parts. Flow does not fire load event for .checkout
 var interval = setInterval(function () {
     if (typeof window.flow.checkout !== 'undefined') {
@@ -13,9 +14,10 @@ var interval = setInterval(function () {
     }
 }, 250)
 
-// New Flow Blaze events
+// For blaze intermediate checkout events
+// fetch calls are neccessary because blaze does not provide us
+// with the variant ID or SKU. If they start passing these these fetch calls can be deleted.
 Flow.set('on', 'loaded', function () {
-    // handle cart updated event
     Flow.on('blaze.checkoutProgress', function (data) {
         switch (data.step) {
             case 'customer_info':
@@ -174,6 +176,8 @@ function pushDLPurchase(data, productsInCart, blazeCheckout) {
     });
 }
 
+
+// The shape of the blaze data object differs from the legacy object
 function getProductsInCartBlazeCheckout(data, shopifyCartData) {
     var items = [];
     data.lines.forEach((orderItem) => {
@@ -205,6 +209,7 @@ function getProductsInCartBlazeCheckout(data, shopifyCartData) {
     return items;
 }
 
+// The shape of the legacy data object differs from the blaze object
 function getProductsInCartLegacyCheckout(data) {
     var items = [];
 
