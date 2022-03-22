@@ -114,7 +114,7 @@ function pushDLBeginCheckout(data, productsInCart, blazeCheckout) {
         'event_id': generateEventID(),
         'ecommerce': {
             'checkout': {
-                'actionField': { step: 1, action: 'checkout' },
+                'actionField': { step: "1", action: 'checkout' },
                 'products': productsInCart
             },
             'currencyCode': blazeCheckout ? getBlazeCurrency(data) : getCurrency(data),
@@ -128,7 +128,7 @@ function pushDLAddShippingInfo(data, productsInCart, blazeCheckout) {
         'event_id': generateEventID(),
         'ecommerce': {
             'checkout': {
-                'actionField': { step: 2, action: 'checkout' },
+                'actionField': { step: "2", action: 'checkout' },
                 'products': productsInCart
             },
             'currencyCode': blazeCheckout ? getBlazeCurrency(data) : getCurrency(data),
@@ -142,7 +142,7 @@ function pushDLAddPaymentInfo(data, productsInCart, blazeCheckout) {
         'event_id': generateEventID(),
         'ecommerce': {
             'checkout': {
-                'actionField': { step: 3, action: 'checkout' },
+                'actionField': { step: "3", action: 'checkout' },
                 'products': productsInCart
             },
             'currencyCode': blazeCheckout ? getBlazeCurrency(data) : getCurrency(data),
