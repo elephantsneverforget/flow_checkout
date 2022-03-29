@@ -1,4 +1,3 @@
-<script>
 // Defaults to using the base currency of the store
 // If you'd like reporting in foreign currency flip this
 // variable to false but be careful, as it stands blaze checkout
@@ -294,4 +293,3 @@ function getValue(valueKey, data) {
 }
 //# sourceURL=flow-checkout-tracking.js
 // Shows under sources, no domain, flow-checkout-tracking.js
-</script>
